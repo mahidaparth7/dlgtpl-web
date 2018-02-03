@@ -1,6 +1,6 @@
 
 var app = angular.module("dlgtpl", ["ngRoute"]);
-const base_url =  window.location.hostname  === 'localhost' ? 'http://localhost/dlgtpl/': 'http://workwithchelseamarie.com/dlgtpl/';
+const base_url =  window.location.hostname  === 'localhost' ? 'http://localhost/dlgtpl/': 'http://workwithchelseamarie.com/pd/';
 app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
     $rootScope.menu = [
         { 'name': 'Home', 'href': base_url },
