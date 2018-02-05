@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/dlgtpl/' : 'http://workwithchelseamarie.com/pd/';
+$config['base_url'] = $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/dlgtpl/' : 'http://pd.workwithchelseamarie.com/';
 
 /*
 |--------------------------------------------------------------------------
