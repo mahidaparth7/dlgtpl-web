@@ -24,7 +24,7 @@
         </div>
         <div class="about-services features-2">
             <div class="row">
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12" ng-repeat="partner in vm.partners">
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12" style="min-height: 300px;" ng-repeat="partner in vm.partners">
                     <div class="card card-profile card-plain">
                         <div class="card-image">
                             <a href="#pablo">
