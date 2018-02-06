@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['television/cable-tv'] = 'home/cableTV';
 $route['television/dlgtpl-channels'] = 'home/dlgtplChannels';
 $route['television/packages'] = 'home/packages';
+$route['television/faqs'] = 'home/faqs';
 $route['broadband/plans'] = 'home/broadbandPlans';
 $route['broadband/offer'] = 'home/broadbandPlanOffer';
 $route['about-us'] = 'home/aboutUs';

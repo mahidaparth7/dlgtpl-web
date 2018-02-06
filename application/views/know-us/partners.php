@@ -1,5 +1,5 @@
 <div ng-controller="PartnersController as vm">
-<div class="page-header header-filter header-small" style="background-image: url('<?php echo base_url();?>assets/img/background/partners-banner.jpg');">
+<div class="page-header header-filter header-small" style="background-image: url('<?php echo base_url(); ?>assets/img/background/partners-banner.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-30">
             <div class="col-md-8  col-md-offset-2">
                 <h2>Become a Partner !</h2>
                 <p class="description">Join In with India's fastest growing Multi System Operator(MSO) and be a part of the Digital Revolution.
@@ -50,64 +50,64 @@
                     <br>
                     <br>
                 </p>
-                <form role="form" id="contact-form" method="post" class="ng-pristine ng-valid">
+                <form role="form" id="contact-form" ng-submit="vm.partnerInquiry()"  class="ng-pristine ng-valid">
                     <div class="row">
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">Your name</label>
-                            <input type="text" name="name" class="form-control">
+                            <input type="text" name="name" ng-model="vm.partner.name"  class="form-control" required>
                             <span class="material-input"></span>
                         </div>
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">Email address</label>
-                            <input type="email" name="email" class="form-control">
+                            <input type="email" name="email" ng-model="vm.partner.email" class="form-control" required>
                             <span class="material-input"></span>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">Phone</label>
-                            <input type="text" name="phone" class="form-control">
+                            <input type="number" ng-model="vm.partner.phoneNumber" name="phone" class="form-control" required>
                             <span class="material-input"></span>
                         </div>
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">City</label>
-                            <input type="text" name="city" class="form-control">
+                            <input type="text" name="city" ng-model="vm.partner.city"  class="form-control" required>
                             <span class="material-input"></span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">State</label>
-                            <input type="text" name="state" class="form-control">
+                            <input type="text" name="state"  ng-model="vm.partner.state" class="form-control">
                             <span class="material-input"></span>
                         </div>
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">Country</label>
-                            <input type="text" name="country" class="form-control">
+                            <input type="text" name="country" ng-model="vm.partner.country" class="form-control">
                             <span class="material-input"></span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group label-floating is-empty col-md-6">
+                        <div class="form-group  col-md-6">
                             <label class="control-label">Company Name</label>
-                            <input type="text" name="company-name" class="form-control">
+                            <input type="text" name="company-name" ng-model="vm.partner.companyName" class="form-control">
                             <span class="material-input"></span>
                         </div>
-                        <div class="form-group label-floating is-empty col-md-6 ">
+                        <div class="form-group  col-md-6 ">
                             <label class="control-label">Business Profile</label>
-                            <input type="text" name="business-profile" class="form-control">
+                            <input type="text" name="business-profile" ng-model="vm.partner.businessProfile" class="form-control">
                             <span class="material-input"></span>
                         </div>
                     </div>
 
-                    <div class="form-group label-floating is-empty">
+                    <div class="form-group  is-empty">
                         <label class="control-label">Your message</label>
-                        <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                        <textarea name="message" class="form-control" ng-model="vm.partner.message" id="message" rows="6"></textarea>
                         <span class="material-input"></span>
                     </div>
                     <div class="submit text-center">
-                        <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us">
+                        <input type="submit" class="btn btn-primary btn-raised btn-round" value="Submit">
                     </div>
                 </form>
             </div>

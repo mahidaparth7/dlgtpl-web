@@ -221,35 +221,35 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form ng-submit="vm.submitForm(vm.inquryFormTitle)" >
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group ">
                                 <label class="control-label">First Name *</label>
-                                <input type="text" name="name" ng-model="vm.inquiryForm.firstName" class="form-control">
+                                <input type="text" name="name" ng-model="vm.inquiryForm.firstName" class="form-control" required>
                             </div>
                             <div class="form-group ">
                                 <label class="control-label">Last Name *</label>
-                                <input type="text" name="name" ng-model="vm.inquiryForm.lastName" class="form-control">
+                                <input type="text" name="name" ng-model="vm.inquiryForm.lastName" class="form-control" required>
                             </div>
                             <div class="form-group ">
                                 <label class="control-label">Contact No * </label>
-                                <input type="email" name="phone" ng-model="vm.inquiryForm.firstName" class="form-control" />
+                                <input type="number" name="phone" ng-model="vm.inquiryForm.phoneNumber" class="form-control" required/>
                             </div>
                             <div class="form-group ">
                                 <label class="control-label">Email *</label>
-                                <input type="text" name="email" ng-model="vm.inquiryForm.email" class="form-control" />
+                                <input type="text" name="email" ng-model="vm.inquiryForm.email" class="form-control" required/>
                             </div>
 
                         </div>
                         <div class="col-md-6">
                             <div class="form-group ">
                                 <label class="control-label">Inquiry Type *</label>
-                                <input type="text" name="type" ng-model="vm.inquiryForm.type" ng-disabled="true" class="form-control" />
+                                <input type="text" name="type" ng-model="vm.inquiryForm.type" ng-disabled="true" class="form-control" required/>
                             </div>
                             <div class="form-group ">
                                 <label class="control-label">Address</label>
-                                <textarea name="address" class="form-control" ng-model="vm.inquiryForm.address" id="address" rows="1"></textarea>
+                                <textarea name="address" class="form-control" ng-model="vm.inquiryForm.address" id="address" rows="1" required></textarea>
                             </div>
                             <div class="form-group ">
                                 <label class="control-label">Pincode</label>

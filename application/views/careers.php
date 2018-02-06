@@ -26,7 +26,7 @@
                 could well be a very important career decision. So… if you think you can make a difference... come forth!
             </h5>
         </div>
-        <div class="row" ng-repeat="career in vm.careers">
+        <div class="row mb-30" ng-repeat="career in vm.careers">
             <h3 class="title">{{career.position}}</h3>
             <p>{{career.openingLine}} </p>
             <p>

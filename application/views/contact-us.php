@@ -14,19 +14,19 @@
 					<form role="form" id="contact-form" ng-submit="vm.contactUsForm();" method="post">
 						<div class="form-group label-floating">
 							<label class="control-label">Your name</label>
-							<input type="text" name="name" ng-model="vm.user.name" class="form-control">
+							<input type="text" name="name" ng-model="vm.user.name" class="form-control" required>
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label">Email address</label>
-							<input type="email" name="email" ng-model="vm.user.email" class="form-control" />
+							<input type="email" name="email" ng-model="vm.user.email" class="form-control" required/>
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label">Phone</label>
-							<input type="text" name="phone" ng-model="vm.user.phoneNumber" class="form-control" />
+							<input type="number" name="phone" ng-model="vm.user.phoneNumber" class="form-control" required/>
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label">Your message</label>
-							<textarea name="message" class="form-control" ng-model="vm.user.message" id="message" rows="6"></textarea>
+							<textarea name="message" class="form-control" ng-model="vm.user.message" id="message" rows="6" required></textarea>
 						</div>
 						<div class="submit text-center">
 							<input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us" />
@@ -40,9 +40,10 @@
 						</div>
 						<div class="description">
 							<h4 class="info-title">Find us at the office</h4>
-							<p> Bld Mihail Kogalniceanu, nr. 8,
-								<br> 7652 Bucharest,
-								<br> Romania
+							417-431, "DL HOUSE", Intercity Complex,
+							<p> Puna-Kumbhariya Road, Nr. PKS Petrol Pump,
+								<br>   Parvat Patia,
+								<br>  Surat, Gujarat 395002
 							</p>
 						</div>
 					</div>
@@ -52,22 +53,18 @@
 						</div>
 						<div class="description">
 							<h4 class="info-title">Give us a ring</h4>
-							<p> Michael Jordan
-								<br> +40 762 321 762
-								<br> Mon - Fri, 8:00-22:00
+								0261 613 5000
+								<br> Mon - Fri, 9:00AM -8:00PM
 							</p>
 						</div>
 					</div>
 					<div class="info info-horizontal">
 						<div class="icon icon-primary">
-							<i class="material-icons">business_center</i>
+							<i class="material-icons">mail</i>
 						</div>
 						<div class="description">
-							<h4 class="info-title">Legal Information</h4>
-							<p> Creative Tim Ltd.
-								<br> VAT &middot; EN2341241
-								<br> IBAN &middot; EN8732ENGB2300099123
-								<br> Bank &middot; Great Britain Bank
+							<h4 class="info-title">Mail Us at</h4>
+							<p> info@gtpl.com
 							</p>
 						</div>
 					</div>

@@ -17,8 +17,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<h2 class="title">We are nerd rockstars</h2>
-					<h5 class="description">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful
-						information.
+					<h5 class="description">Meet our team of board of directors who are passionate to deliver best cable and broadbad service to their customers
 					</h5>
 				</div>
 			</div>

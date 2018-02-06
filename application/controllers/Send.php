@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Send extends CI_Controller
 {
   
-    public function contactUsForm()
+    public function mail()
     {   
         $user = json_decode(file_get_contents('php://input'),true);
       
@@ -17,58 +17,7 @@ class Send extends CI_Controller
         ));
         die();
     }
-    public function upgradeToHD()
-    {   
-        $data = json_decode(file_get_contents('php://input'),true);
-      
-        $message = $this->formBody($data);
-        // sendMail( $message);
-        echo json_encode(array(
-            'status'=>'success',
-            'msg'=>'Mail Sent successfully',
-            'mailBody'=>$message
-        ));
-        die();
-    }
-    public function newConnection()
-    {   
-        $data = json_decode(file_get_contents('php://input'),true);
-      
-        $message = $this->formBody($data);
-        // sendMail( $message);
-        echo json_encode(array(
-            'status'=>'success',
-            'msg'=>'Mail Sent successfully',
-            'mailBody'=>$message
-        ));
-        die();
-    }
-    public function broadbandQuery()
-    {   
-        $data = json_decode(file_get_contents('php://input'),true);
-      
-        $message = $this->formBody($data);
-        // sendMail( $message);
-        echo json_encode(array(
-            'status'=>'success',
-            'msg'=>'Mail Sent successfully',
-            'mailBody'=>$message
-        ));
-        die();
-    }
-    public function cableQuery()
-    {   
-        $data = json_decode(file_get_contents('php://input'),true);
-      
-        $message = $this->formBody($data);
-        // sendMail( $message);
-        echo json_encode(array(
-            'status'=>'success',
-            'msg'=>'Mail Sent successfully',
-            'mailBody'=>$message
-        ));
-        die();
-    }
+  
     private function formBody($data){
         $html = '';
         foreach($data as $key=>$value){

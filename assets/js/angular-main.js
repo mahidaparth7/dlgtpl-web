@@ -75,7 +75,7 @@ app.controller('newConnectionController', function ($scope, $http) {
         console.log(vm.inquiryForm);
         $http({
             method: 'POST',
-            url: base_url + 'send/newConnection',
+            url: base_url + 'send/mail',
             data: vm.inquiryForm
         }).then(function (res) {
             console.log(res);
@@ -91,7 +91,7 @@ app.controller('upgradeToHDController', function ($scope, $http) {
     function inquiryFormSubmit() {
         $http({
             method: 'POST',
-            url: base_url + 'send/upgradeToHD',
+            url: base_url + 'send/mail',
             data: vm.inquiryForm
         }).then(function (res) {
             console.log(res);
@@ -128,8 +128,8 @@ app.controller('GRController', function ($scope, $http) {
     //methods
     vm.openPopUp = openPopUp;
     vm.openInquiryDialog = openInquiryDialog;
-
-
+    vm.submitForm = submitForm;
+    vm.inquiryForm = {};
     function openPopUp(type) {
         vm.type = type;
         if (type === 'setTopBox') {
@@ -282,16 +282,30 @@ app.controller('GRController', function ($scope, $http) {
         $('#accordion-dialog').modal('show');
     }
     function openInquiryDialog(type) {
-        vm.inquiryForm = {
-            type: type === 'sd' ? 'Standard Definition' : 'High Defition'
-        }
-        $('#inquiry-dialog').modal('show');
 
         if (type === 'sd') {
+            vm.inquiryForm.type = 'Standard Definition';
             vm.inquryFormTitle = 'Inquiry For Standard Definition';
-        } else {
+        } else if (type === 'hd') {
+            vm.inquiryForm.type = 'High Defition';
             vm.inquryFormTitle = 'Inquiry For High Definition';
+        } else {
+            vm.inquiryForm.type = 'Broadband';
+            vm.inquryFormTitle = 'Inquiry For Broadband';
         }
+
+        $('#inquiry-dialog').modal('show');
+    }
+
+    function submitForm(type) {
+        $http({
+            method: 'POST',
+            url: base_url + 'send/mail',
+            data: vm.inquiryForm
+        }).then(function (res) {
+            console.log(res);
+            vm.inquiryForm = {}
+        });
     }
 });
 app.controller('RegisterQueryController', function ($scope, $http) {
@@ -303,7 +317,7 @@ app.controller('RegisterQueryController', function ($scope, $http) {
     function broadbandForm() {
         $http({
             method: 'POST',
-            url: base_url + 'send/broadbandQuery',
+            url: base_url + 'send/mail',
             data: vm.cable
         }).then(function (res) {
             console.log(res);
@@ -313,7 +327,7 @@ app.controller('RegisterQueryController', function ($scope, $http) {
         console.log(vm.cable)
         $http({
             method: 'POST',
-            url: base_url + 'send/cableQuery',
+            url: base_url + 'send/mail',
             data: vm.cable
         }).then(function (res) {
             console.log(res);
@@ -887,6 +901,19 @@ app.controller('PartnersController', function ($scope, $rootScope) {
         }
     ]
     $rootScope.bodyClass = 'about-us';
+
+    vm.partnerInquiry = partnerInquiry;
+
+    function partnerInquiry() {
+        $http({
+            method: 'POST',
+            url: base_url + 'send/mail',
+            data: vm.partner
+        }).then(function (res) {
+            console.log(res);
+            vm.partner = {};
+        });
+    }
 });
 app.controller('ContactUsController', function ($scope, $rootScope, $http) {
     $rootScope.bodyClass = 'contact-us';
@@ -900,10 +927,11 @@ app.controller('ContactUsController', function ($scope, $rootScope, $http) {
     function contactUsForm() {
         $http({
             method: 'POST',
-            url: base_url + 'send/contactUsForm',
+            url: base_url + 'send/mail',
             data: vm.user
         }).then(function (res) {
             console.log(res);
+            vm.user = {};
         });
     }
     $().ready(function () {
