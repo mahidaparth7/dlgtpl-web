@@ -1,6 +1,6 @@
 
 var app = angular.module("dlgtpl", ["ngRoute"]);
-const base_url =  window.location.hostname  === 'localhost' ? 'http://localhost/dlgtpl/': 'http://pd.workwithchelseamarie.com/';
+const base_url = window.location.hostname === 'localhost' ? 'http://localhost/dlgtpl/' : 'http://pd.workwithchelseamarie.com/';
 app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
     $rootScope.menu = [
         { 'name': 'Home', 'href': base_url },
@@ -8,59 +8,94 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
             'name': 'Television',
             children: [
                 {
-                    'name': 'CABLE TV', 'href': base_url+'television/cable-tv'
+                    'name': 'CABLE TV', 'href': base_url + 'television/cable-tv'
                 },
 
                 {
-                    'name': 'DL GTPL Channels', 'href': base_url+'television/dlgtpl-channels'
+                    'name': 'DL GTPL Channels', 'href': base_url + 'television/dlgtpl-channels'
                 },
                 {
-                    'name': 'Packages', 'href': base_url+'television/packages'
+                    'name': 'Packages', 'href': base_url + 'television/packages'
                 },
                 {
-                    'name': 'FAQs', 'href': base_url+'television/faqs'
+                    'name': 'FAQs', 'href': base_url + 'television/faqs'
                 },
             ]
         },
         {
-            'name': 'BROADBAND',  children: [
+            'name': 'BROADBAND', children: [
                 {
-                    'name': 'View Plan', 'href': base_url+'broadband/plans'
+                    'name': 'View Plan', 'href': base_url + 'broadband/plans'
                 },
                 {
-                    'name': 'Current Offer', 'href': base_url+'broadband/offer'
+                    'name': 'Current Offer', 'href': base_url + 'broadband/offer'
                 }
             ]
         },
         {
             'name': 'Know Us', children: [
                 {
-                    'name': 'About-Us', 'href': base_url+'about-us'
+                    'name': 'About-Us', 'href': base_url + 'about-us'
                 },
                 {
-                    'name': 'Board of Directors', 'href': base_url+'board-of-directors'
+                    'name': 'Board of Directors', 'href': base_url + 'board-of-directors'
                 },
-                { 'name': 'Partners', 'href': base_url+'partners' },
+                { 'name': 'Partners', 'href': base_url + 'partners' },
             ]
         },
         {
             'name': 'Support', children: [
                 {
-                    'name': 'Register Query', 'href': base_url+'support/register-query'
+                    'name': 'Register Query', 'href': base_url + 'support/register-query'
                 },
                 {
-                    'name': 'Grievance Redressal', 'href': base_url+'support/grievance-redressal'
+                    'name': 'Grievance Redressal', 'href': base_url + 'support/grievance-redressal'
                 }
             ]
         },
-        { 'name': 'Careers', 'href': base_url+'careers' },
-        { 'name': 'Contact Us', 'href': base_url+'contact-us' },
+        { 'name': 'Careers', 'href': base_url + 'careers' },
+        { 'name': 'Contact Us', 'href': base_url + 'contact-us' },
 
     ]
     $rootScope.openModal = openModal;
-    ///////
+
+
     function openModal(id) {
         $('#' + id).modal('show');
+    }
+});
+
+app.controller('newConnectionController', function ($scope, $http) {
+    var vm = this;
+    vm.inquiryFormSubmit = inquiryFormSubmit;
+    ///////
+
+
+    function inquiryFormSubmit() {
+        console.log(vm.inquiryForm);
+        $http({
+            method: 'POST',
+            url: base_url + 'send/newConnection',
+            data: vm.inquiryForm
+        }).then(function (res) {
+            console.log(res);
+        });
+    }
+});
+app.controller('upgradeToHDController', function ($scope, $http) {
+    var vm = this;
+    vm.inquiryFormSubmit = inquiryFormSubmit;
+    ///////
+
+
+    function inquiryFormSubmit() {
+        $http({
+            method: 'POST',
+            url: base_url + 'send/upgradeToHD',
+            data: vm.inquiryForm
+        }).then(function (res) {
+            console.log(res);
+        });
     }
 });
 app.controller('HomeController', function ($scope, $rootScope) {
@@ -95,7 +130,6 @@ app.controller('GRController', function ($scope, $http) {
     vm.openInquiryDialog = openInquiryDialog;
 
 
-    //////////
     function openPopUp(type) {
         vm.type = type;
         if (type === 'setTopBox') {
@@ -261,7 +295,30 @@ app.controller('GRController', function ($scope, $http) {
     }
 });
 app.controller('RegisterQueryController', function ($scope, $http) {
+    var vm = this;
+    vm.submitFormCable = submitFormCable;
+    vm.broadbandForm = broadbandForm;
+    //////////
 
+    function broadbandForm() {
+        $http({
+            method: 'POST',
+            url: base_url + 'send/broadbandQuery',
+            data: vm.cable
+        }).then(function (res) {
+            console.log(res);
+        });
+    }
+    function submitFormCable() {
+        console.log(vm.cable)
+        $http({
+            method: 'POST',
+            url: base_url + 'send/cableQuery',
+            data: vm.cable
+        }).then(function (res) {
+            console.log(res);
+        });
+    }
 });
 app.controller('PackagesController', function ($scope, $http) {
     var vm = this;
@@ -453,7 +510,6 @@ app.controller('PackagesController', function ($scope, $http) {
             },
         ];
         angular.forEach(vm.channels, function (channel) {
-            console.log(channel[packageName])
             if (channel.category && channel.category !== null && channel[packageName] === true) {
                 for (var i = 0; i < vm.currentChannels.length; i++) {
                     var category = vm.currentChannels[i];
@@ -464,7 +520,6 @@ app.controller('PackagesController', function ($scope, $http) {
                 }
             }
         });
-        console.log(vm.currentChannels);
         $('#myModal').modal('show');
     }
     vm.stepperFormSubmit = stepperFormSubmit;
@@ -473,14 +528,13 @@ app.controller('PackagesController', function ($scope, $http) {
         console.log(index, packageName);
     }
     (function () {
-        var url = base_url+'assets/data/channels.json'
+        var url = base_url + 'assets/data/channels.json'
         $http({
             method: 'GET',
             url: url
         }).then(function (res) {
             vm.channels = res.data;
         });
-        vm.channels
     })();
 });
 app.controller('DLGTPLChannelsController', function ($scope, $rootScope) {
@@ -834,8 +888,24 @@ app.controller('PartnersController', function ($scope, $rootScope) {
     ]
     $rootScope.bodyClass = 'about-us';
 });
-app.controller('ContactUsController', function ($scope, $rootScope) {
+app.controller('ContactUsController', function ($scope, $rootScope, $http) {
     $rootScope.bodyClass = 'contact-us';
+    var vm = this;
+
+    //methods
+    vm.contactUsForm = contactUsForm;
+
+    ////
+
+    function contactUsForm() {
+        $http({
+            method: 'POST',
+            url: base_url + 'send/contactUsForm',
+            data: vm.user
+        }).then(function (res) {
+            console.log(res);
+        });
+    }
     $().ready(function () {
         // the body of this function is in assets/material-kit.min.js
         materialKitDemo.initContactUsMap();

@@ -3009,7 +3009,7 @@ select.form-control[multiple],
 .nav-pills>li.active>a:hover {
     background-color: #49C5B6;
     color: #FFFFFF;
-    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgb(73, 197, 182);
 }
 
 .nav-pills:not(.nav-pills-icons)>li>a {

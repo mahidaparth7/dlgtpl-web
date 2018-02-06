@@ -1,4 +1,4 @@
-<div class="modal fade" id="upgrade-hd-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="upgrade-hd-dialog" ng-controller="upgradeToHDController as vm" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header row">
@@ -8,31 +8,31 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form ng-submit="vm.inquiryFormSubmit()">
                     <div class="row">
                         <div class="form-group ">
                             <label class="control-label">First Name *</label>
-                            <input type="text" name="name" ng-model="vm.inquiryForm.firstName" class="form-control">
+                            <input type="text"  ng-model="vm.inquiryForm.firstName" class="form-control">
                         </div>
                         <div class="form-group ">
                             <label class="control-label">Last Name *</label>
-                            <input type="text" name="name" ng-model="vm.inquiryForm.lastName" class="form-control">
+                            <input type="text"  ng-model="vm.inquiryForm.lastName" class="form-control">
                         </div>
                         <div class="form-group ">
                             <label class="control-label">Contact No * </label>
-                            <input type="email" name="phone" ng-model="vm.inquiryForm.firstName" class="form-control" />
+                            <input type="text" ng-model="vm.inquiryForm.firstName" class="form-control" />
                         </div>
                         <div class="form-group ">
                             <label class="control-label">Email *</label>
-                            <input type="text" name="email" ng-model="vm.inquiryForm.email" class="form-control" />
+                            <input type="text"  ng-model="vm.inquiryForm.email" class="form-control" />
                         </div>
                         <div class="form-group ">
                             <label class="control-label">Address</label>
-                            <textarea name="address" class="form-control" ng-model="vm.inquiryForm.address" id="address" rows="1"></textarea>
+                            <textarea class="form-control" ng-model="vm.inquiryForm.address" id="address" rows="1"></textarea>
                         </div>
                         <div class="form-group ">
                             <label class="control-label">Pincode</label>
-                            <input type="text" name="name" ng-model="vm.inquiryForm.pincode" class="form-control">
+                            <input type="text"  ng-model="vm.inquiryForm.pincode" class="form-control">
                         </div>
                         <div class="form-group ">
                             <label class="control-label">Remarks</label>

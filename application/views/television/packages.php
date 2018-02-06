@@ -1,5 +1,5 @@
 <div ng-controller="PackagesController as vm">
-<div class="page-header header-filter"  style="background-image: url('<?php echo base_url();?>assets/img/background/packages-banner.jpg');">
+<div class="page-header header-filter"  style="background-image: url('<?php echo base_url(); ?>assets/img/background/packages-banner.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-8">
@@ -32,18 +32,18 @@
             <div class="row">
                 <div class="col-md-2">
                     <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
-                        <li class="nav-item active ">
-                            <a class="nav-link " href="#dashboard-2" target="_self" role="tab" data-toggle="tab" aria-expanded="false">
+                        <li class="nav-item active " style="min-width: 125px;" >
+                            <a style="font-size: 16px;" class="nav-link " href="#dashboard-2" target="_self" role="tab" data-toggle="tab" aria-expanded="false">
                                 1</br> Packs
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#schedule-2" target="_self" role="tab" data-toggle="tab" aria-expanded="true">
+                        <li class="nav-item" style="min-width: 125px;" >
+                            <a style="font-size: 16px;" class="nav-link " href="#schedule-2" target="_self" role="tab" data-toggle="tab" aria-expanded="true">
                                 2</br> A-la-Carte
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#schedule-2" target="_self" role="tab" data-toggle="tab" aria-expanded="true">
+                        <li class="nav-item" style="min-width: 125px;" >
+                            <a style="font-size: 16px;" class="nav-link " href="#schedule-3" target="_self" role="tab" data-toggle="tab" aria-expanded="true">
                                 3</br> Submit</br> Order
                             </a>
                         </li>
@@ -78,10 +78,44 @@
                             </div>
                         </div>
                         <div class="tab-pane " id="schedule-2" aria-expanded="true">
-                            Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time
-                            schemas.
-                            <br>
-                            <br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                <div class="col-md-2" ng-if="channel.price !== 0" ng-repeat="channel in vm.channels">
+                                    <div class="card card-blog card-plain">
+                                                <div class="card-header card-header-image">
+                                                    <a href="#pablo">
+                                                        <img class="img" title="{{channel.name}}" alt="{{channel.name}}" style="    border: 1px solid #efefef;" src="<?php echo base_url(); ?>assets/img/channels-img/{{channel['image'] || 'no-img.gif'}}">
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer ">
+                                                    <div class="row">
+                                                        <div class="pull-left"><h4 class="title">₹ {{channel.price}}</h4></div>
+                                                        <div class="pull-right"><h4 class="title"><input type="checkbox" ng-model="vm.orderDetail.alCarteChannels"/></h4></div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="tab-pane " id="schedule-3" aria-expanded="true">
+                                <form role="form" ng-submit="vm.sendOrderDetails()" id="package-order-form" method="post">
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Your name</label>
+                                        <input type="text" name="name" ng-model="vm.orderDetail.user.name" class="form-control">
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Email address</label>
+                                        <input type="email" name="email" ng-model="vm.orderDetail.user.email" class="form-control" />
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Phone</label>
+                                        <input type="text" name="phone" ng-model="vm.orderDetail.user.phoneNumber" class="form-control" />
+                                    </div>
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Description</label>
+                                        <textarea name="message" class="form-control" ng-model="vm.orderDetail.user.description" id="message" rows="6"></textarea>
+                                    </div>
+                                    <div class="submit text-center">
+                                        <input type="submit" class="btn btn-primary btn-raised btn-round" value="submit" />
+                                    </div>
+                                </form>
                         </div>
                     </div>
                 </div>
@@ -102,19 +136,20 @@
                 <div id="accordion" role="tablist">
                     <div ng-if="category.channels.length > 0" class="card card-collapse" style="padding:10px;" ng-repeat="category in  vm.currentChannels">
                         <div class="card-header" role="tab" id="heading{{$index}}">
-                            <h5 class="mb-0">
+                            <h4 class="title mb-0">
                                 <a data-toggle="collapse" target="_self" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse{{$index}}">
                                     {{category.channels[0].category}} ({{category.channels.length}})
                                     <i class="material-icons">keyboard_arrow_down</i>
                                 </a>
-                            </h5>
+                            </h4>
                         </div>
                         <div id="collapse{{$index}}" class="collapse" role="tabpanel" aria-labelledby="heading{{$index}}" data-parent="#accordion">
                             <div class="row card-body">
                                 <div class="col-md-1" ng-repeat="channel in category.channels">
                                     <img alt="{{channel['name']}}" title="{{channel['name']}}" style="margin:5px 0px;width: 90px;height: 50px;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);"
-                                        src="<?php echo base_url();?>assets/img/channels-img/{{channel['image'] || 'no-img.gif'}}" />
+                                        src="<?php echo base_url(); ?>assets/img/channels-img/{{channel['image'] || 'no-img.gif'}}" />
                                     <br>
+                                    <h6>Channel No :{{channel['channelNo']}}</h6>
                                 </div>
                             </div>
                         </div>

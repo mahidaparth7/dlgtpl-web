@@ -11,22 +11,22 @@
 						<br>
 						<br>
 					</p>
-					<form role="form" id="contact-form" method="post">
+					<form role="form" id="contact-form" ng-submit="vm.contactUsForm();" method="post">
 						<div class="form-group label-floating">
 							<label class="control-label">Your name</label>
-							<input type="text" name="name" class="form-control">
+							<input type="text" name="name" ng-model="vm.user.name" class="form-control">
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label">Email address</label>
-							<input type="email" name="email" class="form-control" />
+							<input type="email" name="email" ng-model="vm.user.email" class="form-control" />
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label">Phone</label>
-							<input type="text" name="phone" class="form-control" />
+							<input type="text" name="phone" ng-model="vm.user.phoneNumber" class="form-control" />
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label">Your message</label>
-							<textarea name="message" class="form-control" id="message" rows="6"></textarea>
+							<textarea name="message" class="form-control" ng-model="vm.user.message" id="message" rows="6"></textarea>
 						</div>
 						<div class="submit text-center">
 							<input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us" />
