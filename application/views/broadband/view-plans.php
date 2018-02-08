@@ -30,7 +30,7 @@
                     ng-repeat="city in vm.cities">{{city.name}}</button>
             </div>
         </div>
-        <div class="row broadband-plans">
+        <div class="row broadband-plans" ng-init="vm.colors = ['#FF8989','#89E0FF','#58AD5C','#F98C0E','#666666','#FF8989','#89E0FF','#58AD5C']">
             <div class="row" ng-repeat="planCategory in vm.plan">
                 <h3 class="title" style="text-align:center;">{{planCategory.category}}</h3>
                 <div class="MultiCarousel" ng-if="planCategory.plans.length > 4" data-items="1,2,3,4" data-slide="1" id="MultiCarousel" data-interval="1000">
@@ -38,8 +38,8 @@
                         <div class="item card card-pricing card-plain" ng-repeat="plan in planCategory.plans ">
                             <div ng-if="plan.month_variation.length > 0" ng-init="plan.price = plan.month_variation[0].price;plan.month_variation[0].active = true;">
                             </div>
-                            <div class="card-content">
-                                <h6 class="category">{{plan.speed}}</h6>
+                            <div class="card-content" style="border-radius: 0px 10% 0px 10%;padding: 0px !important;border: 4px solid {{vm.colors[$index]}};">
+                                <h6 class="category" style="color:#ffffff;border-radius: 0px 15px;margin: 0px;padding: 10px 0px;    background-color: {{vm.colors[$index]}};">{{plan.speed}}</h6>
                                 <h1 class="card-title">
                                     <small>₹</small>{{plan.price}}
                                 </h1>
@@ -57,7 +57,7 @@
                                     <span class="label  {{monthVariation.active ? 'label-broadband' : 'label-default'}}" ng-click="vm.changMonth(plan, monthVariation)"
                                         ng-repeat="monthVariation in plan.month_variation">{{monthVariation.validity}}</span>
                                 </div>
-                                <a ng-click="vm.getPlan(plan)" class="get-now-broadband btn btn-primary btn-round">
+                                <a ng-click="vm.getPlan(plan)" class="get-now-broadband btn btn-primary btn-round" style="background-color:{{vm.colors[$index]}}">
                                     Get Now
                                 </a>
                             </div>
@@ -74,9 +74,9 @@
                     <div class="col-md-3" ng-repeat="plan in planCategory.plans ">
                         <div ng-if="plan.month_variation.length > 0" ng-init="plan.price = plan.month_variation[0].price;plan.month_variation[0].active = true;">
                         </div>
-                        <div class="item card card-pricing card-plain ">
-                            <div class="card-content">
-                                <h6 class="category">{{plan.speed}}</h6>
+                        <div class="item card card-pricing card-plain " style="    padding: 10px;">
+                            <div class="card-content" style="border-radius: 0px 10% 0px 10%;padding: 0px !important;border: 4px solid {{vm.colors[$index]}};">
+                                <h6 class="category" style="color:#ffffff;border-radius: 0px 15px;margin: 0px;padding: 10px 0px;    background-color: {{vm.colors[$index]}};">{{plan.speed}}</h6>
                                 <h1 class="card-title">
                                     <small>₹</small>{{plan.price}}
                                 </h1>
@@ -94,7 +94,7 @@
                                     <span class="label  {{monthVariation.active ? 'label-broadband' : 'label-default'}}" ng-click="vm.changMonth(plan, monthVariation)"
                                         ng-repeat="monthVariation in plan.month_variation">{{monthVariation.validity}}</span>
                                 </div>
-                                <a ng-click="vm.getPlan(plan)" class="get-now-broadband btn btn-primary btn-round">
+                                <a ng-click="vm.getPlan(plan)" class="get-now-broadband btn btn-primary btn-round" style="background-color:{{vm.colors[$index]}}">
                                     Get Now
                                 </a>
                             </div>
