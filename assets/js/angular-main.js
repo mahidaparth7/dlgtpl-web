@@ -735,9 +735,9 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
             {
                 'category': 'Unlimited Plans',
                 'plans': [
-                    { 'speed': '2 Mbps', 'month_variation': [{ 'validity': '12 months + 6 Months Free', 'price': 7000 }] },
-                    { 'speed': '3 Mbps', 'month_variation': [{ 'validity': '12 months + 8 Months free', 'price': 11500 }, { 'validity': '6 months + 1 Month free', 'price': 6200 }] },
-                    { 'speed': '5 Mbps', 'month_variation': [{ 'validity': '12 months + 8 Months free', 'price': 14000 }, { 'validity': '6 months + 1 Month free', 'price': 7500 }] },
+                    { 'speed': '2 Mbps', 'month_variation': [{ 'validity': '12 + 6 Months Free', 'price': 7000 }] },
+                    { 'speed': '3 Mbps', 'month_variation': [{ 'validity': '12 + 8 Months free', 'price': 11500 }, { 'validity': '6 + 1 Month free', 'price': 6200 }] },
+                    { 'speed': '5 Mbps', 'month_variation': [{ 'validity': '12 + 8 Months free', 'price': 14000 }, { 'validity': '6 + 1 Month free', 'price': 7500 }] },
                 ]
             },
             {
@@ -992,4 +992,29 @@ app.controller('FAQController', function ($scope, $rootScope) {
             ans: 'Get in touch with your local DL GTPL office/Local cable operator and inform them of your new location. They will revert on the feasibility and transfer the STB to your new location provided all dues are cleared. If the feasibility is negative, you will have to go in for a new service provider, whichever is available in that area. If the STB has been availed on rental basis, the refund will be processed upon surrendering the same.'
         }
     ]
+});
+// see http://stackoverflow.com/q/35950735/145346
+jQuery(document).ready(function ($) {
+
+    var visible = false;
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        if (!visible && scrollTop > 100) {
+            $(".scrollToTop").fadeIn();
+            visible = true;
+        } else if (visible && scrollTop <= 100) {
+            $(".scrollToTop").fadeOut();
+            visible = false;
+        }
+    });
+
+    //Click event to scroll to top
+    $(".scrollToTop").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
 });

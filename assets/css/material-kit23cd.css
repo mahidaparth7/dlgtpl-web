@@ -11,12 +11,9 @@
  *
  * ========================================================= */
 
-
 /* ANIMATION */
 
-
 /* SHADOWS */
-
 
 /* Shadows (from mdl http://www.getmdl.io/) */
 
@@ -103,7 +100,6 @@ a .material-icons {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
 
 /*           Animations              */
 
@@ -5094,7 +5090,6 @@ h2.title {
     text-align: left;
 }
 
-
 /*       Fix bug for IE      */
 
 @media screen and (-ms-high-contrast: active),
@@ -5669,7 +5664,6 @@ hr.on-light {
     padding: 10px 20px;
     width: 100%;
 }
-
 
 /* Theme */
 
@@ -6469,7 +6463,6 @@ select[data-dropdownjs][disabled]+.dropdownjs>input[readonly] {
     border-color: #5897fb;
 }
 
-
 /*
  * bootstrap-tagsinput v0.8.0
  *
@@ -6797,7 +6790,6 @@ select[data-dropdownjs][disabled]+.dropdownjs>input[readonly] {
     margin-bottom: 10px;
 }
 
-
 /*** Navigation ***/
 
 .nbs-flexisel-nav-left,
@@ -7084,7 +7076,7 @@ select[data-dropdownjs][disabled]+.dropdownjs>input[readonly] {
 }
 
 .header-filter::before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .header-filter .container {
@@ -7785,7 +7777,6 @@ footer .pull-center {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
@@ -7859,7 +7850,6 @@ footer .pull-center {
     cursor: inherit !important;
 }
 
-
 /* Painting and performance;
  * Browsers can paint handles in their own layer.
  */
@@ -7869,7 +7859,6 @@ footer .pull-center {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
 
 /* Slider size and handle placement;
  */
@@ -7890,7 +7879,6 @@ footer .pull-center {
     top: -17px;
 }
 
-
 /* Styling;
  */
 
@@ -7904,7 +7892,6 @@ footer .pull-center {
     -webkit-transition: background 450ms;
     transition: background 450ms;
 }
-
 
 /* Handles and cursors;
  */
@@ -7946,7 +7933,6 @@ footer .pull-center {
 .noUi-vertical .noUi-handle:after {
     top: 17px;
 }
-
 
 /* Disabled state;
  */
@@ -8013,7 +7999,6 @@ footer .pull-center {
 .slider.slider-rose .noUi-handle {
     border-color: #e91e63;
 }
-
 
 /*!
  * Datetimepicker for Bootstrap 3
@@ -8412,7 +8397,6 @@ footer .pull-center {
     z-index: 1;
     cursor: pointer;
 }
-
 
 /*!
  * Bootstrap-select v1.11.2 (http://silviomoreto.github.io/bootstrap-select)
@@ -10050,7 +10034,6 @@ select.selectpicker {
     background-position: 0px 30px;
 }
 
-
 /* Mobile Menu*/
 
 .navbar .navbar-toggle .icon-bar {
@@ -10060,7 +10043,6 @@ select.selectpicker {
 .navbar .in {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
 
 /* .header-filter::before{
     back
@@ -10251,7 +10233,7 @@ select.selectpicker {
 
 .banner-filter:before,
 .banner-filter:after {
-    background-color: rgba(0, 0, 0, 0.78);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .color-white {
@@ -10320,6 +10302,25 @@ select.selectpicker {
 .mb-30 {
     margin-bottom: 30px;
 }
-.mb-20{
-    margin-bottom:20px;
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.scrollToTop {
+    margin: 30px 37px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    padding: 8px 12px;
+    background-color: #49C5B6;
+    border-radius: 50%;
+    color: #000000;
+}
+
+.scrollToTop:hover {
+    text-decoration: none;
 }

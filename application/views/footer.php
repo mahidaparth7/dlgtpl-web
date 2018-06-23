@@ -78,7 +78,7 @@
 						<h5>Customer Application Form</h5>
 						<ul class="links-vertical">
 							<li>
-								<a href="<?php echo base_url();?>assets/documents/catv.pdf" target="_blank">
+								<a href="<?php echo base_url(); ?>assets/documents/catv.pdf" target="_blank">
 									<i class="fa fa-file-pdf-o fa-2x" style="color:rgb(124, 53, 53);padding-right:5px;"></i> Download
 								</a>
 							</li>
@@ -157,16 +157,22 @@
 			<span style="font-size:12px; ">New Connection</span>
 		</a>
     </div>
-    <?php 
-    include_once('modals/new-connection-modal.html');
-    include_once('modals/upgrade-hd-modal.html');
-    ?>
+    <?php
+include_once 'modals/new-connection-modal.html';
+include_once 'modals/upgrade-hd-modal.html';
+?>
+
+
+
+
+
+<a href="#" class="scrollToTop " style="display: none;"><i class="	fa fa-arrow-up"></i></a>
 </body>
 <!--   Core JS Files   -->
-<script src="<?php echo base_url();?>assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url();?>assets/js/material.min.js"></script>
-<script src="<?php echo base_url();?>assets/js/bootstrap-tagsinput.js"></script>
-<script src="<?php echo base_url();?>assets/js/material-kit23cd.js?v=1.2.1" type="text/javascript"></script>
-<script src="<?php echo base_url();?>assets/js/angular-main.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/material.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-tagsinput.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/material-kit23cd.js?v=1.2.1" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/angular-main.js"></script>
 </html>

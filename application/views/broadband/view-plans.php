@@ -90,9 +90,12 @@
                                 <div ng-if="plan.month_variation.length > 0">
                                     <span>
                                         <b>Select Month</b>
-                                    </span>
+                                    </span><br/>
+                                    <div style="    padding: 12px 0px;">
                                     <span class="label  {{monthVariation.active ? 'label-broadband' : 'label-default'}}" ng-click="vm.changMonth(plan, monthVariation)"
                                         ng-repeat="monthVariation in plan.month_variation">{{monthVariation.validity}}</span>
+                                    </div>
+
                                 </div>
                                 <a ng-click="vm.getPlan(plan)" class="get-now-broadband btn btn-primary btn-round" style="background-color:{{vm.colors[$index]}}">
                                     Get Now
