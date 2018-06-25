@@ -3116,6 +3116,7 @@ select.form-control[multiple],
 
 .navbar .navbar-nav>li.open>.dropdown-menu {
     margin-top: 0;
+    padding: 0px;
 }
 
 .navbar .navbar-nav>.active>a,
@@ -3714,6 +3715,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 .dropdown-menu li a:active {
     background-color: #49C5B6;
     color: #FFFFFF;
+    margin: 0px;
 }
 
 .dropdown-menu .divider {
