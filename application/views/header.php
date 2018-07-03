@@ -18,6 +18,7 @@
 
 	<!-- CSS Files -->
 	<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="<?php echo base_url(); ?>assets/css/animate.css" rel="stylesheet" />
 	<link href="<?php echo base_url(); ?>assets/css/material-kit23cd.css?v=1.2.1" rel="stylesheet" />
 
 	<!-- <link href="assets-for-demo/demo.css" rel="stylesheet" /> -->

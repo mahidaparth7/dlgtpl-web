@@ -1008,7 +1008,6 @@ jQuery(document).ready(function ($) {
             visible = false;
         }
     });
-
     //Click event to scroll to top
     $(".scrollToTop").click(function () {
         $("html, body").animate({
@@ -1016,5 +1015,22 @@ jQuery(document).ready(function ($) {
         }, 800);
         return false;
     });
+});
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
 
+    var elemTop = $(elem).offset().top - 150;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(window).scroll(function () {
+    $('.animated').each(function () {
+        if (isScrolledIntoView(this) === true) {
+            console.log('hi', this)
+            $(this).addClass($(this).attr('data-animation'))
+        }
+    });
 });

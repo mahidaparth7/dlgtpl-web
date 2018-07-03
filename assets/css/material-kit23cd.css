@@ -20,6 +20,7 @@
 body {
     background-color: #E5E5E5;
     color: #3C4858;
+    overflow-x: hidden;
 }
 
 body.inverse {
@@ -10325,4 +10326,8 @@ select.selectpicker {
 
 .scrollToTop:hover {
     text-decoration: none;
+}
+
+.animated {
+    -webkit-animation-duration: 3s;
 }

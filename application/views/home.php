@@ -3,8 +3,8 @@
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" ></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
             <!-- <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li> -->
             <!-- <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li> -->
@@ -12,11 +12,34 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-            <div class="item active">
-                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url();?>assets/img/movies-list.jpg');">
+            <div class="item">
+                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/home-banner-3.jpg');">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 text-left">
+                            <div class="col-md-7 col-md-offset-5 text-right animated bounceInLeft">
+                                <h1 class="title">We have packages that suits your need</h1>
+                                <h4>Packages Starts with 120 ₹, every family needs a </h4>
+                                <br>
+
+                                <div class="buttons">
+                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
+                                        <i class="material-icons">share</i> Share Offer
+                                    </a>
+                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                        <i class="material-icons">shopping_cart</i> Shop Now
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item active ">
+                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/movies-list.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-left animated bounceInRight">
                                 <h1 class="title">Latest Movies & Shows</h1>
                                 <h4>With DLGTPL Cable watch latest movies and TV shows at home, enjoy the world class experience.</h4>
                                 <br>
@@ -42,69 +65,11 @@
                 </div>
 
             </div>
-
             <div class="item">
-                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url();?>assets/img/home-banner-3.jpg');">
+                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/sports.jpg');background-position: left top;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-7 col-md-offset-5 text-right">
-                                <h1 class="title">We have packages that suits your need</h1>
-                                <h4>Packages Starts with 120 ₹, every family needs a </h4>
-                                <br>
-
-                                <div class="buttons">
-                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
-                                        <i class="material-icons">share</i> Share Offer
-                                    </a>
-                                    <a href="#pablo" class="btn btn-danger btn-lg">
-                                        <i class="material-icons">shopping_cart</i> Shop Now
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- <div class="item">
-                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url();?>assets/img/home-banner-3.jpg');">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 text-left">
-                                <h1 class="title">Material Kit PRO</h1>
-                                <h4>Dolce &amp; Gabbana is a luxury Italian fashion house founded in 1985 in Legnano by Italian
-                                    designers Domenico Dolce and Stefano Gabbana. The two met in Milan in 1980 and designed
-                                    for the same fashion house.</h4>
-                                <br>
-
-                                <div class="buttons">
-                                    <a href="#pablo" class="btn btn-primary btn-lg">
-                                        Read More
-                                    </a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
-                                        <i class="fa fa-get-pocket"></i>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
-            <div class="item">
-                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url();?>assets/img/sports.jpg');background-position: left top;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 col-md-offset-5 text-right">
+                            <div class="col-md-7 col-md-offset-5 text-right  animated bounceInLeft">
                                 <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
                                 <h4>Our HD pack Starts With 350 ₹</h4>
                                 <br>
@@ -139,11 +104,9 @@
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-
             </div>
-
-            <div class="col-md-6">
-                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url();?>assets/img/services/digital.jpg')">
+            <div class="col-md-6 animated" data-animation="fadeInLeft">
+                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/digital.jpg')">
 
                     <div class="card-content">
                         <!-- <h6 class="category text-info">Digital</h6> -->
@@ -159,9 +122,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url();?>assets/img/services/hd.jpg')">
+            <div class="col-md-6 animated" data-animation="fadeInRight">
+                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/hd.jpg')">
                     <div class="card-content">
                         <!-- <h6 class="category text-info">HD</h6> -->
                         <h3 class="card-title">HD</h3>
@@ -174,8 +136,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url();?>assets/img/services/local-channels.jpg')">
+            <div class="col-md-6 animated" data-animation="fadeInLeft">
+                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/local-channels.jpg')">
                     <div class="card-content">
                         <!-- <h6 class="category text-info">Local Channels</h6> -->
                         <h3 class="card-title">Local Channels</h3>
@@ -188,9 +150,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url();?>assets/img/services/broadband.jpg')">
-                    <div class="card-content">
+            <div class="col-md-6 animated" data-animation="fadeInRight">
+                <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/broadband.jpg')">
+                    <div class="card-content ">
                         <h3 class="card-title">Broadband</h3>
                         <p class="card-description">
                             Amazing speed with affordable price
@@ -207,10 +169,10 @@
     </div>
 </div>
 <div class="section section-overview" style="padding:0px;">
-    <div class="features-5 banner-filter" style="height:480px;background-image:url('<?php echo base_url();?>assets/img/highspeed-broadband.jpg')">
+    <div class="features-5 banner-filter" style="height:480px;background-image:url('<?php echo base_url(); ?>assets/img/highspeed-broadband.jpg')">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6 animated " data-animation="zoomInRight">
                     <h1 class="title primary-color">Rediscover the world of Internet</h1>
                     <h4 class="color-white">
                         <strong style="font-size:1.2em;">50 MBPS </strong>plans at amazing price</h4>
@@ -228,7 +190,7 @@
         <div class="row">
             <div class="col-md-6" style="    margin-top: 100px;">
                 <div class="phone-container">
-                    <img src="<?php echo base_url();?>assets/img/sections/iphone.png">
+                    <img src="<?php echo base_url(); ?>assets/img/sections/iphone.png">
                 </div>
             </div>
             <div class="col-md-6">
@@ -298,10 +260,10 @@
                 <div class="card card-blog card-plain">
                     <div class="card-image">
                         <a href="#pablo">
-                            <img src="<?php echo base_url();?>assets/img/now_playing/fukrey-returns.jpg" alt="">
+                            <img src="<?php echo base_url(); ?>assets/img/now_playing/fukrey-returns.jpg" alt="">
 
                         </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url();?>assets/img/examples/blog5.jpg&quot;); opacity: 1;"></div>
+                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog5.jpg&quot;); opacity: 1;"></div>
                         <div class="ripple-container"></div>
                     </div>
 
@@ -329,7 +291,7 @@
                         <div class="footer">
                             <div class="author">
                                 <a href="#pablo">
-                                    <img src="<?php echo base_url();?>assets/img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+                                    <img src="<?php echo base_url(); ?>assets/img/faces/avatar.jpg" alt="..." class="avatar img-raised">
                                     <span>Times of India</span>
                                 </a>
                             </div>
@@ -347,9 +309,9 @@
                 <div class="card card-blog card-plain">
                     <div class="card-image">
                         <a href="#pablo">
-                            <img class="img" src="<?php echo base_url();?>assets/img/now_playing/the_man_from_earth.jpg">
+                            <img class="img" src="<?php echo base_url(); ?>assets/img/now_playing/the_man_from_earth.jpg">
                         </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url();?>assets/img/examples/blog1.jpg&quot;); opacity: 1;"></div>
+                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog1.jpg&quot;); opacity: 1;"></div>
                     </div>
 
                     <div class="card-content">
@@ -365,7 +327,7 @@
                         <!-- <div class="footer">
                                 <div class="author">
                                     <a href="#pablo">
-                                        <img src="<?php echo base_url();?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
+                                        <img src="<?php echo base_url(); ?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
                                         <span>Mike John</span>
                                     </a>
                                 </div>
@@ -385,9 +347,9 @@
                 <div class="card card-blog card-plain">
                     <div class="card-image">
                         <a href="#pablo">
-                            <img class="img" src="<?php echo base_url();?>assets/img/now_playing/baahubali.jpg">
+                            <img class="img" src="<?php echo base_url(); ?>assets/img/now_playing/baahubali.jpg">
                         </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url();?>assets/img/examples/blog6.jpg&quot;); opacity: 1;"></div>
+                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog6.jpg&quot;); opacity: 1;"></div>
                     </div>
 
                     <div class="card-content">
@@ -403,7 +365,7 @@
                         <!-- <div class="footer">
                                 <div class="author">
                                     <a href="#pablo">
-                                        <img src="<?php echo base_url();?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
+                                        <img src="<?php echo base_url(); ?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
                                         <span>Mike John</span>
                                     </a>
                                 </div>
@@ -443,10 +405,10 @@
                 <div class="card card-blog card-plain">
                     <div class="card-image">
                         <a href="#pablo">
-                            <img src="<?php echo base_url();?>assets/img/now_playing/tennis_tournament.jpg" alt="">
+                            <img src="<?php echo base_url(); ?>assets/img/now_playing/tennis_tournament.jpg" alt="">
 
                         </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url();?>assets/img/examples/blog5.jpg&quot;); opacity: 1;"></div>
+                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog5.jpg&quot;); opacity: 1;"></div>
                         <div class="ripple-container"></div>
                     </div>
 
@@ -468,9 +430,9 @@
                 <div class="card card-blog card-plain">
                     <div class="card-image">
                         <a href="#pablo">
-                            <img class="img" src="<?php echo base_url();?>assets/img/now_playing/man-vs-wild.jpg">
+                            <img class="img" src="<?php echo base_url(); ?>assets/img/now_playing/man-vs-wild.jpg">
                         </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url();?>assets/img/examples/blog6.jpg&quot;); opacity: 1;"></div>
+                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog6.jpg&quot;); opacity: 1;"></div>
                     </div>
 
                     <div class="card-content">
@@ -486,7 +448,7 @@
                         <!-- <div class="footer">
                                 <div class="author">
                                     <a href="#pablo">
-                                        <img src="<?php echo base_url();?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
+                                        <img src="<?php echo base_url(); ?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
                                         <span>Mike John</span>
                                     </a>
                                 </div>
