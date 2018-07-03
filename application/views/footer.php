@@ -7,22 +7,22 @@
 						<ul class="links-vertical">
 
 							<li>
-								<a href="#/about-us?scrollTo=about-us">
+								<a href="/about-us">
 									About Us
 								</a>
 							</li>
 							<li>
-								<a href="#/board-of-directors">
+								<a href="/board-of-directors">
 									Board of Directors
 								</a>
 							</li>
 							<li>
-								<a href="#/partners#partners">
+								<a href="/partners">
 									Partners
 								</a>
 							</li>
 							<li>
-								<a href="#/contact-us#contact-us">
+								<a href="/contact-us">
 									Contact Us
 								</a>
 							</li>
@@ -32,17 +32,17 @@
 						<h5>Market</h5>
 						<ul class="links-vertical">
 							<li>
-								<a href="#/faqs?scrollTo=faqs">
+								<a href="/television/faqs">
 									Sales FAQ
 								</a>
 							</li>
 							<li>
-								<a href="#/service/cable-tv?scrollTo=cable-tv">
+								<a href="/television/cable-tv">
 									Cable TV
 								</a>
 							</li>
 							<li>
-								<a href="#/service/broadband?scrollTo=broadband">
+								<a href="/broadband/plans">
 									Broadband
 								</a>
 							</li>
@@ -58,17 +58,17 @@
 						<h5>Social Feed</h5>
 						<ul class="links-vertical">
 							<li>
-								<a href="#/terms-and-conditions?scrollTo=terms-and-conditions">
+								<a href="/terms-and-condition">
 									Terms and Condition
 								</a>
 							</li>
 							<li>
-								<a href="#/privacy-policy?scrollTo=privacy-policy">
+								<a href="/privacy-policy">
 									Privacy Policy
 								</a>
 							</li>
 							<li>
-								<a href="#/compliance?scrollTo=compliance">
+								<a href="/compliance?scrollTo=compliance">
 									Compliance
 								</a>
 							</li>
@@ -83,7 +83,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#/customer-application-form?scrollTo=/customer-application-form">
+								<a href="/customer-application-form?scrollTo=/customer-application-form">
 									<i class="fa fa-hand-pointer-o fa-2x" style="padding-right:5px;"></i>
 									Submit Online
 								</a>
@@ -94,27 +94,27 @@
 						<h5>Follow Us</h5>
 						<ul class="social-buttons">
 							<li>
-								<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter">
+								<a href="pablo" class="btn btn-just-icon btn-simple btn-twitter">
 									<i class="fa fa-twitter"></i>
 								</a>
 							</li>
 							<li>
-								<a href="#pablo" class="btn btn-just-icon btn-simple btn-facebook">
+								<a href="pablo" class="btn btn-just-icon btn-simple btn-facebook">
 									<i class="fa fa-facebook-square"></i>
 								</a>
 							</li>
 							<!-- <li>
-								<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble">
+								<a href="pablo" class="btn btn-just-icon btn-simple btn-dribbble">
 									<i class="fa fa-dribbble"></i>
 								</a>
 							</li> -->
 							<!-- <li>
-								<a href="#pablo" class="btn btn-just-icon btn-simple btn-google">
+								<a href="pablo" class="btn btn-just-icon btn-simple btn-google">
 									<i class="fa fa-google-plus"></i>
 								</a>
 							</li> -->
 							<li>
-								<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram">
+								<a href="pablo" class="btn btn-just-icon btn-simple btn-instagram">
 									<i class="fa fa-instagram"></i>
 								</a>
 							</li>
@@ -166,7 +166,7 @@ include_once 'modals/upgrade-hd-modal.html';
 
 
 
-<a href="#" class="scrollToTop " style="display: none;"><i class="	fa fa-arrow-up"></i></a>
+<a href="" class="scrollToTop " style="display: none;"><i class="	fa fa-arrow-up"></i></a>
 </body>
 <!--   Core JS Files   -->
 <script src="<?php echo base_url(); ?>assets/js/jquery.min.js" type="text/javascript"></script>

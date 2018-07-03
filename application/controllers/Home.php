@@ -42,8 +42,8 @@ class Home extends CI_Controller
     public function broadbandPlans()
     {
         $this->load->template('broadband/view-plans');
-	}
-	public function broadbandPlanOffer()
+    }
+    public function broadbandPlanOffer()
     {
         $this->load->template('broadband/offer');
     }
@@ -75,10 +75,18 @@ class Home extends CI_Controller
     {
         $this->load->template('contact-us');
     }
+    public function termsAndCondition()
+    {
+        $this->load->template('terms-and-conditions');
+    }
+    public function privacyPolicy()
+    {
+        $this->load->template('privacy-policy');
+    }
     private function sendMail()
     {
         $this->load->library('email');
-		$to = 'info@dlgtpl.com';
+        $to = 'info@dlgtpl.com';
         $this->email->from('your@example.com', 'Your Name');
         $this->email->to($to);
         $this->email->subject('Email Test');

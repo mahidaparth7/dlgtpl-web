@@ -99,10 +99,10 @@
 					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/dl-house/foreigners.jpg">
 				</div>
 				<div class="col-md-6">
-					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/examples/office5.jpg">
+					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/dl-house/ganpati-visarjan-festival.jpg">
 				</div>
 				<div class="col-md-6">
-					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/examples/office1.jpg">
+					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/dl-house/night-scene.jpg">
 				</div>
 
 			</div>

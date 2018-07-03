@@ -1029,7 +1029,6 @@ function isScrolledIntoView(elem) {
 $(window).scroll(function () {
     $('.animated').each(function () {
         if (isScrolledIntoView(this) === true) {
-            console.log('hi', this)
             $(this).addClass($(this).attr('data-animation'))
         }
     });
