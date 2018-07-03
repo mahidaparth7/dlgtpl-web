@@ -68,7 +68,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/compliance?scrollTo=compliance">
+								<a href="/compliance">
 									Compliance
 								</a>
 							</li>

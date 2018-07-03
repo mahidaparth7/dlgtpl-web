@@ -67,3 +67,4 @@ $route['careers'] = 'home/careers';
 $route['contact-us'] = 'home/contactUs';
 $route['terms-and-condition'] = 'home/termsAndCondition';
 $route['privacy-policy'] = 'home/privacyPolicy';
+$route['compliance'] = 'home/compliance';
