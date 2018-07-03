@@ -83,6 +83,10 @@ class Home extends CI_Controller
     {
         $this->load->template('privacy-policy');
     }
+    public function compliance()
+    {
+        $this->load->template('compliance');
+    }
     private function sendMail()
     {
         $this->load->library('email');
