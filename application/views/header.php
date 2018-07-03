@@ -44,7 +44,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="{{item.children ? 'dropdown' : ''}}" ng-repeat="item in menu">
 						<a ng-if="!item.children" ng-href="{{item.href}}">
-							{{item.name}}{{item.children}}
+							<i ng-if="item.icon" style="padding-right:5px;" class="{{item.icon}}"></i>{{item.name}}{{item.children}}
 						</a>
 						<a ng-if="item.children" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 							{{item.name}}

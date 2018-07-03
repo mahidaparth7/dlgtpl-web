@@ -55,7 +55,7 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
         },
         { 'name': 'Careers', 'href': base_url + 'careers' },
         { 'name': 'Contact Us', 'href': base_url + 'contact-us' },
-
+        { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net',icon:'fa fa-internet-explorer' }
     ]
     $rootScope.openModal = openModal;
 
