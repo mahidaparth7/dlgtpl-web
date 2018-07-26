@@ -16,7 +16,7 @@
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/home-banner-3.jpg');">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-7 col-md-offset-5 text-right animated bounceInLeft">
+                            <div class="col-md-7 col-md-offset-5 text-right  bounceInLeft">
                                 <h1 class="title">We have packages that suits your need</h1>
                                 <h4>Packages Starts with 120 ₹, every family needs a </h4>
                                 <br>
@@ -39,7 +39,7 @@
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/movies-list.jpg');">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 text-left animated bounceInRight">
+                            <div class="col-md-6 text-left  bounceInRight">
                                 <h1 class="title">Latest Movies & Shows</h1>
                                 <h4>With DLGTPL Cable watch latest movies and TV shows at home, enjoy the world class experience.</h4>
                                 <br>
@@ -69,7 +69,7 @@
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/sports.jpg');background-position: left top;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-7 col-md-offset-5 text-right  animated bounceInLeft">
+                            <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
                                 <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
                                 <h4>Our HD pack Starts With 350 ₹</h4>
                                 <br>
@@ -105,7 +105,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
             </div>
-            <div class="col-md-6 animated" data-animation="fadeInLeft">
+            <div class="col-md-6 " data-animation="fadeInLeft">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/digital.jpg')">
 
                     <div class="card-content">
@@ -122,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animated" data-animation="fadeInRight">
+            <div class="col-md-6 " data-animation="fadeInRight">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/hd.jpg')">
                     <div class="card-content">
                         <!-- <h6 class="category text-info">HD</h6> -->
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animated" data-animation="fadeInLeft">
+            <div class="col-md-6 " data-animation="fadeInLeft">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/local-channels.jpg')">
                     <div class="card-content">
                         <!-- <h6 class="category text-info">Local Channels</h6> -->
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animated" data-animation="fadeInRight">
+            <div class="col-md-6 " data-animation="fadeInRight">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/broadband.jpg')">
                     <div class="card-content ">
                         <h3 class="card-title">Broadband</h3>
@@ -172,7 +172,7 @@
     <div class="features-5 banner-filter" style="height:480px;background-image:url('<?php echo base_url(); ?>assets/img/highspeed-broadband.jpg')">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 animated " data-animation="zoomInRight">
+                <div class="col-md-6  " data-animation="zoomInRight">
                     <h1 class="title primary-color">Rediscover the world of Internet</h1>
                     <h4 class="color-white">
                         <strong style="font-size:1.2em;">50 MBPS </strong>plans at amazing price</h4>

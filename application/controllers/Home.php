@@ -87,6 +87,10 @@ class Home extends CI_Controller
     {
         $this->load->template('compliance');
     }
+    public function service()
+    {
+        $this->load->template('broadband/service');
+    }
     private function sendMail()
     {
         $this->load->library('email');

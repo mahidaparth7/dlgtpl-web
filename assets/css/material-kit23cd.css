@@ -3729,7 +3729,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 .navbar.navbar-default .dropdown-menu li>a:focus {
     color: #FFFFFF;
     background-color: #49C5B6;
-    box-shadow: 0 4px 20px 0px rgba(73, 197, 182, 0.15), 0 7px 10px -5px rgba(73, 197, 182, 0.48);
+    box-shadow: none;
 }
 
 .dropdown .dropdown-menu,
@@ -4043,6 +4043,7 @@ h2.title {
 .card-description,
 .footer-big p {
     color: #999999;
+    font-weight: 500;
 }
 
 .text-warning {
@@ -10172,9 +10173,7 @@ select.selectpicker {
     padding-top: 40px
 }
 
-.contact-us .container {
-    max-width: 970px
-}
+
 
 .contact-us .big-map {
     height: 55vh;
@@ -10311,7 +10310,7 @@ select.selectpicker {
 }
 
 .scrollToTop {
-    margin: 30px 37px;
+    margin: 56px 18px;
     text-align: center;
     text-decoration: none;
     position: fixed;
@@ -10322,6 +10321,7 @@ select.selectpicker {
     background-color: #49C5B6;
     border-radius: 50%;
     color: #000000;
+    z-index: 99999;
 }
 
 .scrollToTop:hover {

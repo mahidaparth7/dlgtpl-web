@@ -57,6 +57,7 @@ $route['television/dlgtpl-channels'] = 'home/dlgtplChannels';
 $route['television/packages'] = 'home/packages';
 $route['television/faqs'] = 'home/faqs';
 $route['broadband/plans'] = 'home/broadbandPlans';
+$route['broadband/service'] = 'home/service';
 $route['broadband/offer'] = 'home/broadbandPlanOffer';
 $route['about-us'] = 'home/aboutUs';
 $route['board-of-directors'] = 'home/bod';

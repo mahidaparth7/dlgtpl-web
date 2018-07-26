@@ -25,6 +25,9 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
         {
             'name': 'BROADBAND', children: [
                 {
+                    'name': 'Service', 'href': base_url + 'broadband/service'
+                },
+                {
                     'name': 'View Plan', 'href': base_url + 'broadband/plans'
                 },
                 {
