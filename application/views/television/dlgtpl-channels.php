@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">DLGTPL CHANNELS</h1>
+                <h1 class="title">DLGTPL Channels</h1>
                 <h4 class="sub-title">Brings entertainment to your home with our wide range of local channels</h4>
             </div>
         </div>
