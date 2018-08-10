@@ -1,4 +1,4 @@
-<div class="main main-raised" style="    margin-top: 80px;">
+<div class="main main-raised" id="service" style="    margin-top: 80px;">
     <div class="row">
         <div class="container">
             <div class="col-md-6">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="row" >
+    <div class="row details" >
         <div class="container" style="background: #153474;width: 95.5%;">
             <div class="row text-center" style="color: #ffffff;margin: 20px 0px;">
                 <i class="fa fa-wifi fa-3x"></i>

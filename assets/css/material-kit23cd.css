@@ -10173,8 +10173,6 @@ select.selectpicker {
     padding-top: 40px
 }
 
-
-
 .contact-us .big-map {
     height: 55vh;
     width: 100%;
@@ -10330,4 +10328,15 @@ select.selectpicker {
 
 .animated {
     -webkit-animation-duration: 3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-raised {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .details h2,.details h5 {
+        padding: 0 20px;
+    }
+    
 }
