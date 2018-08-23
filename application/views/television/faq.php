@@ -27,8 +27,7 @@
                             </div>
                             <div id="collapse_{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_{{$index}}" aria-expanded="false"
                                 style="height: 0px;">
-                                <div class="panel-body">
-                                    {{faq.ans}}
+                                <div class="panel-body" ng-bind-html="faq.ans | unsafe">
                                 </div>
                             </div>
                         </div>

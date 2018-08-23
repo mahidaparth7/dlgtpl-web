@@ -32,17 +32,17 @@
             <div class="row">
                 <div class="col-md-2">
                     <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
-                        <li class="nav-item active " style="min-width: 125px;" >
+                        <li class="nav-item active step-1" style="min-width: 125px;" >
                             <a style="font-size: 16px;" class="nav-link " href="#dashboard-2" target="_self" role="tab" data-toggle="tab" aria-expanded="false">
                                 1</br> Packs
                             </a>
                         </li>
-                        <li class="nav-item" style="min-width: 125px;" >
+                        <li class="nav-item step-2" style="min-width: 125px;" >
                             <a style="font-size: 16px;" class="nav-link " href="#schedule-2" target="_self" role="tab" data-toggle="tab" aria-expanded="true">
                                 2</br> A-la-Carte
                             </a>
                         </li>
-                        <li class="nav-item" style="min-width: 125px;" >
+                        <li class="nav-item step-3" style="min-width: 125px;" >
                             <a style="font-size: 16px;" class="nav-link " href="#schedule-3" target="_self" role="tab" data-toggle="tab" aria-expanded="true">
                                 3</br> Submit</br> Order
                             </a>
@@ -70,7 +70,7 @@
                                                     <i class="fa fa-television" aria-hidden="true"></i> View Channels</a>
                                             </h5>
                                             <div class="footer text-center">
-                                                <a ng-click="vm.stepperFormSubmit($index+1, package.name)" class="btn btn-white btn-round">Select</a>
+                                                <a ng-click="vm.stepperFormSubmit('schedule-2', package.name)" class="btn btn-white btn-round">Select</a>
                                             </div>
                                         </div>
                                     </div>
@@ -81,39 +81,39 @@
                                 <div class="col-md-2" ng-if="channel.price !== 0" ng-repeat="channel in vm.channels">
                                     <div class="card card-blog card-plain">
                                                 <div class="card-header card-header-image">
-                                                    <a href="#pablo">
+                                                    <a href="#">
                                                         <img class="img" title="{{channel.name}}" alt="{{channel.name}}" style="    border: 1px solid #efefef;" src="<?php echo base_url(); ?>assets/img/channels-img/{{channel['image'] || 'no-img.gif'}}">
                                                     </a>
                                                 </div>
                                                 <div class="card-footer ">
                                                     <div class="row">
                                                         <div class="pull-left"><h4 class="title">₹ {{channel.price}}</h4></div>
-                                                        <div class="pull-right"><h4 class="title"><input type="checkbox" ng-model="vm.orderDetail.alCarteChannels"/></h4></div>
+                                                        <div class="pull-right"><h4 class="title"><input type="checkbox" ng-model="vm.orderDetail.alCarteChannels[channel.channelNo].isChecked"/></h4></div>
                                                     </div>
                                                 </div>
                                     </div>
                                 </div>
                         </div>
                         <div class="tab-pane " id="schedule-3" aria-expanded="true">
-                                <form role="form" ng-submit="vm.sendOrderDetails()" id="package-order-form" method="post">
+                                <form name="form" ng-submit="vm.sendOrderDetails()" id="package-order-form" method="post">
                                     <div class="form-group label-floating">
                                         <label class="control-label">Your name</label>
-                                        <input type="text" name="name" ng-model="vm.orderDetail.user.name" class="form-control">
+                                        <input type="text" name="name" ng-model="vm.orderDetail.user.name" class="form-control" required>
                                     </div>
                                     <div class="form-group label-floating">
                                         <label class="control-label">Email address</label>
-                                        <input type="email" name="email" ng-model="vm.orderDetail.user.email" class="form-control" />
+                                        <input type="email" name="email" ng-model="vm.orderDetail.user.email" class="form-control" required/>
                                     </div>
                                     <div class="form-group label-floating">
                                         <label class="control-label">Phone</label>
-                                        <input type="text" name="phone" ng-model="vm.orderDetail.user.phoneNumber" class="form-control" />
+                                        <input type="text" name="phone" ng-model="vm.orderDetail.user.phoneNumber" class="form-control" required/>
                                     </div>
                                     <div class="form-group label-floating">
                                         <label class="control-label">Description</label>
-                                        <textarea name="message" class="form-control" ng-model="vm.orderDetail.user.description" id="message" rows="6"></textarea>
+                                        <textarea name="message" class="form-control" ng-model="vm.orderDetail.user.description" id="message" rows="6" required></textarea>
                                     </div>
                                     <div class="submit text-center">
-                                        <input type="submit" class="btn btn-primary btn-raised btn-round" value="submit" />
+                                        <input type="submit" ng-disabled="form.$invalid" class="btn btn-primary btn-raised btn-round" value="submit" />
                                     </div>
                                 </form>
                         </div>

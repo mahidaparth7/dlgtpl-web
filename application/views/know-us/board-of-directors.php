@@ -34,7 +34,7 @@
 							</div>
 							<div class="card-content">
 								<h4 class="card-title">{{bod.name}}</h4>
-								<h6 class="category text-muted">CEO / Co-Founder</h6>
+								<!-- <h6 class="category text-muted">CEO / Co-Founder</h6> -->
 								<p class="card-description"> {{bod.desc}}</p>
 							</div>
 						</div>

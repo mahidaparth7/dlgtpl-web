@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<!-- <base href="./"> -->
 	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/img/favicon.png">
+	<link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>DLGTPL</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -26,7 +26,7 @@
 	<script src="<?php echo base_url(); ?>assets/js/angular-route.min.js" type="text/javascript"></script>
 </head>
 <body class="{{bodyClass}}" id="{{bodyClass}}">
-	<nav class="navbar  navbar-fixed-top" style="height:80px;">
+	<nav class="navbar  navbar-fixed-top" style="height:80px;    ">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -41,7 +41,7 @@
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navigation-example">
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right" style="padding-top: 10px;">
 					<li class="{{item.children ? 'dropdown' : ''}}" ng-repeat="item in menu">
 						<a ng-if="!item.children" ng-href="{{item.href}}">
 							<i ng-if="item.icon" style="padding-right:5px;" class="{{item.icon}}"></i>{{item.name}}{{item.children}}

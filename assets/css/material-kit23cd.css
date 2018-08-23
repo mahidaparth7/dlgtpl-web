@@ -3059,7 +3059,7 @@ select.form-control[multiple],
 .navbar {
     border: 0;
     border-radius: 3px;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
 .navbar .navbar-brand {
@@ -10022,7 +10022,7 @@ select.selectpicker {
 }
 
 .navbar .navbar-brand img {
-    width: 170px;
+    width: 225px;
     height: auto;
 }
 
@@ -10053,7 +10053,7 @@ select.selectpicker {
 } */
 
 .about-office img {
-    height: 250px;
+    height: auto;
     width: 100%;
 }
 

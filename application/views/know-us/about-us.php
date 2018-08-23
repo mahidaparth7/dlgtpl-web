@@ -89,10 +89,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 ">
+				</div>
+				<div class="col-md-6 ">
 					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/dl-house/day-scene.jpg">
 				</div>
-				<div class="col-md-4">
+				<!-- <div class="col-md-4">
 					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/dl-house/tewnty20-trophy.jpg">
 				</div>
 				<div class="col-md-4">
@@ -103,7 +105,7 @@
 				</div>
 				<div class="col-md-6">
 					<img class="img-rounded img-responsive img-raised" alt="Raised Image" src="<?php echo base_url();?>assets/img/dl-house/night-scene.jpg">
-				</div>
+				</div> -->
 
 			</div>
 

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">Broadband</h1>
+                <h1 class="title">DLGTPL Broadband</h1>
                 <h4 class="sub-title">Faster, Smarter and Secure Internet connectivity for Home & Business</h4>
             </div>
         </div>

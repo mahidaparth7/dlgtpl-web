@@ -1,6 +1,7 @@
 
 var app = angular.module("dlgtpl", ["ngRoute"]);
 const base_url = window.location.hostname === 'localhost' ? 'http://localhost/dlgtpl/' : 'http://pd.workwithchelseamarie.com/';
+app.filter('unsafe', function ($sce) { return $sce.trustAsHtml; });
 app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
     $rootScope.menu = [
         { 'name': 'Home', 'href': base_url },
@@ -8,14 +9,14 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
             'name': 'Television',
             children: [
                 {
-                    'name': 'CABLE TV', 'href': base_url + 'television/cable-tv'
+                    'name': 'Cable Tv', 'href': base_url + 'television/cable-tv'
                 },
 
                 {
                     'name': 'DL GTPL Channels', 'href': base_url + 'television/dlgtpl-channels'
                 },
                 {
-                    'name': 'Packages', 'href': base_url + 'television/packages'
+                    'name': 'Digital Cable Tv Packages', 'href': base_url + 'television/packages'
                 },
                 {
                     'name': 'FAQs', 'href': base_url + 'television/faqs'
@@ -58,7 +59,7 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
         },
         { 'name': 'Careers', 'href': base_url + 'careers' },
         { 'name': 'Contact Us', 'href': base_url + 'contact-us' },
-        { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net',icon:'fa fa-internet-explorer' }
+        { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net', icon: 'fa fa-internet-explorer' }
     ]
     $rootScope.openModal = openModal;
 
@@ -376,10 +377,10 @@ app.controller('PackagesController', function ($scope, $http) {
             'center': true
         }
     ]
-
+    vm.orderDetail = {};
     //methods
     vm.openPopUp = openPopUp;
-
+    vm.sendOrderDetails = sendOrderDetails;
 
     //////
     function openPopUp(packageName) {
@@ -542,7 +543,33 @@ app.controller('PackagesController', function ($scope, $http) {
     vm.stepperFormSubmit = stepperFormSubmit;
 
     function stepperFormSubmit(index, packageName) {
-        console.log(index, packageName);
+        vm.orderDetail.packName = packageName;
+        $('.nav-pills  a[href="#' + index + '"]').tab('show');
+    }
+
+    function sendOrderDetails() {
+        console.log(vm.orderDetail)
+        var channels = [];
+        if (vm.orderDetail.alCarteChannels) {
+            angular.forEach(vm.channels, function (channel) {
+                if (vm.orderDetail.alCarteChannels[channel.channelNo]) {
+                    channels.push(channel.name);
+                }
+            });
+        }
+       
+        if (channels.length === 0 || !vm.orderDetail.packName) {
+            alert('Please select channels or pack first.');
+            return;
+        }
+        vm.orderDetail.channels = channels;
+        delete vm.orderDetail.alCarteChannels;
+        $http({
+            method: 'POST',
+            url: base_url + 'send/addOrder',
+        }).then(function (res) {
+            alert("Your order placed successfully.")
+        });
     }
     (function () {
         var url = base_url + 'assets/data/channels.json'
@@ -955,8 +982,8 @@ app.controller('FAQController', function ($scope, $rootScope) {
             ans: 'Digital cable will work on the same cable that is currently in your residence. The cable will now, not be connected directly to the TV but will get connected to the STB first. Audio Video cords will then be used to connect to your TV.'
         },
         {
-            que: 'HOW MUCH WILL DIGITAL CABLE COST?',
-            ans: 'If you are in the mandated CAS areas of South Mumbai and South Delhi, monthly service charges vary depending on the type of package you order from us. Go to the Packages section for details about the many options. If you reside in any area other than the mandated CAS regions you will continue paying the same rate that you are paying currently to receive up to 150-160 services. Additional services may also be optionally available at an additional cost.'
+            que: 'HOW MUCH DIGITAL CABLE TV COST?',
+            ans: 'Monthly service charges vary depending on the type of package you order from us. Go to the Packages section for details about the many options. Additional services may also be optionally available at an additional cost.</br></br>Do I need to buy or Rent new Equipment to receive Digital Cable ? Answer -  For all other areas different STBs are available @ very low and affordable rates from DL GTPL Office / LCO. Under the 3 year rental scheme, the ownership of the STB will be transferred upon payment of the last monthly rental payment.</br></br> I Have Misplaced/Lost the Viewing Card ? What Should I Do ? - Get in touch with your local DL GTPL office/Local cable operator and they will swap or replace the same. Charges of Rs.250/- (including tax) will be levied for the same.'
         },
         {
             que: 'DO I NEED TO BUY OR RENT NEW EQUIPMENT TO RECEIVE DIGITAL CABLE?',

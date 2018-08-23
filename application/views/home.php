@@ -6,6 +6,8 @@
             <li data-target="#carousel-example-generic" data-slide-to="0" ></li>
             <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
             <!-- <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li> -->
             <!-- <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li> -->
         </ol>
@@ -89,6 +91,55 @@
                 </div>
 
             </div>
+            <div class="item">
+                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/slider-hd-channels.jpeg');background-position: left top;">
+                    <!-- <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
+                                <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
+                                <h4>Our HD pack Starts With 350 ₹</h4>
+                                <br>
+                                <div class="buttons">
+                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
+                                        <i class="material-icons">share</i> Share Offer
+                                    </a>
+                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                        <i class="material-icons">shopping_cart</i> Shop Now
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/slider-hd-channels (2).jpeg');    background-position: 33% 42%;
+    background-size: contain;">
+                    <!-- <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
+                                <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
+                                <h4>Our HD pack Starts With 350 ₹</h4>
+                                <br>
+                                <div class="buttons">
+                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
+                                        <i class="material-icons">share</i> Share Offer
+                                    </a>
+                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                        <i class="material-icons">shopping_cart</i> Shop Now
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
@@ -111,7 +162,7 @@
                     <div class="card-content">
                         <!-- <h6 class="category text-info">Digital</h6> -->
                         <a href="#pablo">
-                            <h3 class="card-title">Digital</h3>
+                            <h3 class="card-title">Digital Cable TV</h3>
                         </a>
                         <p class="card-description">
                             Cutting edge digital cable service, High quality picture & stereophonic sound Set Top Box
@@ -126,7 +177,7 @@
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/hd.jpg')">
                     <div class="card-content">
                         <!-- <h6 class="category text-info">HD</h6> -->
-                        <h3 class="card-title">HD</h3>
+                        <h3 class="card-title">HD Service</h3>
                         <p class="card-description">
                             Premiere high definition cable service with Full HD video and sound
                         </p>
@@ -153,7 +204,7 @@
             <div class="col-md-6 " data-animation="fadeInRight">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/broadband.jpg')">
                     <div class="card-content ">
-                        <h3 class="card-title">Broadband</h3>
+                        <h3 class="card-title">DLGTPL Broadband</h3>
                         <p class="card-description">
                             Amazing speed with affordable price
                         </p>
