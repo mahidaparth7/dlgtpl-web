@@ -8,6 +8,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5" class=""></li>
             <!-- <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li> -->
             <!-- <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li> -->
         </ol>
@@ -118,27 +119,11 @@
             <div class="item">
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/slider-hd-channels (2).jpeg');    background-position: 33% 42%;
     background-size: contain;">
-                    <!-- <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
-                                <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
-                                <h4>Our HD pack Starts With 350 ₹</h4>
-                                <br>
-                                <div class="buttons">
-                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
-                                        <i class="material-icons">share</i> Share Offer
-                                    </a>
-                                    <a href="#pablo" class="btn btn-danger btn-lg">
-                                        <i class="material-icons">shopping_cart</i> Shop Now
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
-
+            </div>
+            <div class="item">
+                <div class="page-header header-filter " style="background-image: url('<?php echo base_url(); ?>assets/img/hd-stb.jpg');">
+                </div>
             </div>
         </div>
     </div>
