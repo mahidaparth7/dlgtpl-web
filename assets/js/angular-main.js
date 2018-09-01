@@ -62,20 +62,28 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
         { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net', icon: 'fa fa-internet-explorer' }
     ]
     $rootScope.openModal = openModal;
+    $rootScope.closeModal = closeModal;
 
 
     function openModal(id) {
         $('#' + id).modal('show');
     }
+    function closeModal(id) {
+        $('#' + id).modal('hide');
+    }
 });
 
-app.controller('newConnectionController', function ($scope, $http) {
+app.controller('newConnectionController', function ($scope, $rootScope, $http) {
     var vm = this;
     vm.inquiryFormSubmit = inquiryFormSubmit;
+    vm.inquiryForm = {
+        type:"broadband"
+    }
     ///////
 
 
     function inquiryFormSubmit() {
+        vm.inquiryForm.plan = $rootScope.plan;
         console.log(vm.inquiryForm);
         $http({
             method: 'POST',
@@ -83,6 +91,8 @@ app.controller('newConnectionController', function ($scope, $http) {
             data: vm.inquiryForm
         }).then(function (res) {
             console.log(res);
+            alert("Your inquiry submitted successfully.")
+            $rootScope.closeModal('new-connection-dialog');
         });
     }
 });
@@ -808,7 +818,10 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
 
         }, 100)
     }
-
+    vm.getPlan = function(plan){
+        $rootScope.plan = plan;
+        $rootScope.openModal('new-connection-dialog'); 
+    }
     function _jQueryForSlider() {
         $('.leftLst, .rightLst').click(function () {
             var condition = $(this).hasClass("leftLst");
