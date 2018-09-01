@@ -31,9 +31,9 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
                 {
                     'name': 'View Plan', 'href': base_url + 'broadband/plans'
                 },
-                {
-                    'name': 'Current Offer', 'href': base_url + 'broadband/offer'
-                }
+                // {
+                //     'name': 'Current Offer', 'href': base_url + 'broadband/offer'
+                // }
             ]
         },
         {
@@ -57,7 +57,7 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
                 }
             ]
         },
-        { 'name': 'Careers', 'href': base_url + 'careers' },
+        // { 'name': 'Careers', 'href': base_url + 'careers' },
         { 'name': 'Contact Us', 'href': base_url + 'contact-us' },
         { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net', icon: 'fa fa-internet-explorer' }
     ]

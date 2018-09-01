@@ -63,7 +63,7 @@
             </div>
             <div class="row text-center">
                     <h2 style="color: #ffffff;text-align: center;font-family:Raleway;font-weight:400;font-style:normal" class="vc_custom_heading">The Fastest, Most Reliable Internet Speeds Available</h2>
-                    <h5 style="text-align: center;"><span style="color: #ffffff;">With the advantage of broadband technology, USA Communications’ Internet offers the fastest, most reliable Internet speeds you can get. Stream video, play online games, download music, upload photos and more across multiple devices in your home, without sacrificing performance.</span></h5>
+                    <h5 style="text-align: center;"><span style="color: #ffffff;">With the advantage of broadband technology, DLGTPL Broadband Internet offers the fastest, most reliable Internet speeds you can get. Stream video, play online games, download music, upload photos and more across multiple devices in your home, without sacrificing performance.</span></h5>
                     <h2 style="    margin-bottom: 30px;color: #ffffff;text-align: center;font-family:Raleway;font-weight:400;font-style:normal" class="vc_custom_heading">Speeds are 30x faster than DSL!</h2>
             </div>
         </div>

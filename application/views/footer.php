@@ -91,7 +91,7 @@
 						</ul>
 					</div>
 					<div class="col-md-3">
-						<h5>Follow Us</h5>
+						<!-- <h5>Follow Us</h5>
 						<ul class="social-buttons">
 							<li>
 								<a href="pablo" class="btn btn-just-icon btn-simple btn-twitter">
@@ -99,36 +99,36 @@
 								</a>
 							</li>
 							<li>
-								<a href="pablo" class="btn btn-just-icon btn-simple btn-facebook">
+								<a href="https://www.facebook.com/pages/Dl-Gtpl-Calbnet/199803496734410" class="btn btn-just-icon btn-simple btn-facebook">
 									<i class="fa fa-facebook-square"></i>
 								</a>
 							</li>
-							<!-- <li>
+							<li>
 								<a href="pablo" class="btn btn-just-icon btn-simple btn-dribbble">
 									<i class="fa fa-dribbble"></i>
 								</a>
-							</li> -->
-							<!-- <li>
+							</li>
+							<li>
 								<a href="pablo" class="btn btn-just-icon btn-simple btn-google">
 									<i class="fa fa-google-plus"></i>
 								</a>
-							</li> -->
-							<li>
+							</li>
+							 <li>
 								<a href="pablo" class="btn btn-just-icon btn-simple btn-instagram">
 									<i class="fa fa-instagram"></i>
 								</a>
 							</li>
-						</ul>
+						</ul> -->
 
 						<h5>Customer Care</h5>
 						<h4 class="text-muted">
 							<i class="fa fa-phone" aria-hidden="true"></i>
-							<small style="padding: 0px 10px;">1800 108 1000</small>
+							<small style="padding: 0px 10px;">0261 613 5000</small>
 						</h4>
-						<h4>
+						<!-- <h4>
 							<i class="fa fa-mobile" aria-hidden="true"></i>
 							<small style="padding: 0px 10px;">+91 90999 37010</small>
-						</h4>
+						</h4> -->
 					</div>
 				</div>
 			</div>

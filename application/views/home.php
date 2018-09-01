@@ -48,10 +48,10 @@
                                 <br>
 
                                 <div class="buttons">
-                                    <a href="#pablo" class="btn btn-primary btn-lg">
+                                    <a href="<?php echo base_url();?>/television/dlgtpl-channels" class="btn btn-primary btn-lg">
                                         Read More
                                     </a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
+                                    <!-- <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                     <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
@@ -59,7 +59,7 @@
                                     </a>
                                     <a href="#pablo" class="btn btn-just-icon btn-white btn-simple btn-lg">
                                         <i class="fa fa-get-pocket"></i>
-                                    </a>
+                                    </a> -->
                                 </div>
 
                             </div>
@@ -77,10 +77,10 @@
                                 <h4>Our HD pack Starts With 350 ₹</h4>
                                 <br>
                                 <div class="buttons">
-                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
+                                    <!-- <a href="#pablo" class="btn btn-white btn-simple btn-lg">
                                         <i class="material-icons">share</i> Share Offer
-                                    </a>
-                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                    </a> -->
+                                    <a href="<?php echo  base_url();?>/television/packages" class="btn btn-danger btn-lg">
                                         <i class="material-icons">shopping_cart</i> Shop Now
                                     </a>
                                 </div>
@@ -94,24 +94,22 @@
             </div>
             <div class="item">
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/slider-hd-channels.jpeg');background-position: left top;">
-                    <!-- <div class="container">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
-                                <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
-                                <h4>Our HD pack Starts With 350 ₹</h4>
+                                <h2 class="title">Enjoy 50+ HD channels <br>only for Rs. 120/- <br>per month.</h2>
                                 <br>
-                                <div class="buttons">
+                                <!-- <div class="buttons">
                                     <a href="#pablo" class="btn btn-white btn-simple btn-lg">
                                         <i class="material-icons">share</i> Share Offer
                                     </a>
-                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                    <a href="<?php echo base_url()?>/television/packages" class="btn btn-danger btn-lg">
                                         <i class="material-icons">shopping_cart</i> Shop Now
                                     </a>
-                                </div>
-
+                                </div> -->
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
 
@@ -146,13 +144,11 @@
 
                     <div class="card-content">
                         <!-- <h6 class="category text-info">Digital</h6> -->
-                        <a href="#pablo">
-                            <h3 class="card-title">Digital Cable TV</h3>
-                        </a>
+                        <h3 class="card-title">Digital Cable TV</h3>
                         <p class="card-description">
                             Cutting edge digital cable service, High quality picture & stereophonic sound Set Top Box
                         </p>
-                        <a href="#pablo" class="btn btn-danger btn-round">
+                        <a href="<?php echo base_url() ?>/television/cable-tv" class="btn btn-danger btn-round">
                             <i class="material-icons">content_copy</i> Read More
                         </a>
                     </div>
@@ -166,7 +162,7 @@
                         <p class="card-description">
                             Premiere high definition cable service with Full HD video and sound
                         </p>
-                        <a href="#pablo" class="btn btn-info btn-round">
+                        <a href="<?php echo base_url() ?>/television/cable-tv" class="btn btn-info btn-round">
                             <i class="material-icons">build</i> Read More
                         </a>
                     </div>
@@ -180,7 +176,7 @@
                         <p class="card-description">
                             24 hour local channel Movies, Music, News, Rail & Air Schedule
                         </p>
-                        <a href="#pablo" class="btn btn-warning btn-round">
+                        <a href="<?php base_url() ?>/television/dlgtpl-channels" class="btn btn-warning btn-round">
                             <i class="material-icons">subject</i> Read More
                         </a>
                     </div>
@@ -193,7 +189,7 @@
                         <p class="card-description">
                             Amazing speed with affordable price
                         </p>
-                        <a href="#pablo" class="btn btn-warning btn-round">
+                        <a href="<?php echo base_url();?>/broadband/service" class="btn btn-warning btn-round">
                             <i class="material-icons">subject</i> Read More
                         </a>
                     </div>
@@ -211,8 +207,8 @@
                 <div class="col-md-6  " data-animation="zoomInRight">
                     <h1 class="title primary-color">Rediscover the world of Internet</h1>
                     <h4 class="color-white">
-                        <strong style="font-size:1.2em;">50 MBPS </strong>plans at amazing price</h4>
-                    <a href="#pablo" class="btn btn-primary btn-lg">
+                        <strong style="font-size:1.2em;">100 MBPS </strong>plans at amazing price</h4>
+                    <a href="<?php echo  base_url()?>/broadband/plans" class="btn btn-primary btn-lg">
                         <strong>Get Now</strong>
                         <div class="ripple-container"></div>
                     </a>
