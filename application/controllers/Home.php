@@ -91,6 +91,22 @@ class Home extends CI_Controller
     {
         $this->load->template('broadband/service');
     }
+    public function customerApplicationForm()
+    {
+        $this->load->template('customer-application-form');
+    }
+    public function cafSubmit()
+    {
+        $target_dir = "../../assets/upload/";
+        print_r($_FILES);
+        foreach ($_FILES as $file) {
+            $target_file = $target_dir . basename($_FILES["file"]["name"]);
+            echo $target_file;
+            move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+        }
+        print_r($_POST);
+        die;
+    }
     private function sendMail()
     {
         $this->load->library('email');

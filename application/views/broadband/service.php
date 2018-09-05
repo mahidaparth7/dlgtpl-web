@@ -7,10 +7,10 @@
             </div>
             <div class="col-md-6">
                 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="wpb_wrapper"><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-                    <h2 style="font-size: 30px;color: #b20000;text-align: left;font-family:Raleway;font-weight:700;font-style:normal" class="vc_custom_heading">Lightning Fast Connections</h2>
+                    <h2 style="font-size: 30px;color: #182f48;text-align: left;font-family:Raleway;font-weight:700;font-style:normal" class="vc_custom_heading">Lightning Fast Connections</h2>
                     <div class="wpb_text_column wpb_content_element ">
                         <div class="wpb_wrapper">
-                            <ul>
+                            <ul style="font-size: 15px;">
                                 <li>Fast download speeds available up to 60Mbps</li>
                                 <li>Flawless video streaming</li>
                                 <li>Real-time game play</li>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="col-md-6" style="margin: 115px 0px;">
             <div style="text-align:center;">
-                    <h2 style="    font-size: 30px;color: #b20000;text-align: center;font-family: Raleway;font-weight: 700;font-style: normal;">Pairs perfectly with Cable TV</h2>
+                    <h2 style="    font-size: 30px;color: #182f48;text-align: center;font-family: Raleway;font-weight: 700;font-style: normal;">Pairs perfectly with Cable TV</h2>
                     <div class="wpb_text_column wpb_content_element ">
                         <div class="wpb_wrapper">
                             <h6 style="    line-height: 1.8;font-size: 13px;">

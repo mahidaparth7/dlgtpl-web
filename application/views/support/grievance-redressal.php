@@ -26,7 +26,7 @@
                                         <a href="javascript:void(0);" ng-click="vm.openPopUp('setTopBox')">Trouble Shooting Set Top Box</a>
                                     </li>
                                     <li>
-                                        <a href="assets/documents/catv.pdf">Customer Application Form</a>
+                                        <a href="<?php echo base_url();?>assets/documents/catv.pdf">Customer Application Form</a>
                                     </li>
                                 </ul>
                             </h4>
@@ -42,10 +42,10 @@
                             <h4 class="card-title">
                                 <ul>
                                     <li>
-                                        <a href="javascript:void(0);" ng-click="vm.openPopUp('broadband')">Trouble Shooting Set Top Box</a>
+                                        <a href="javascript:void(0);" ng-click="vm.openPopUp('broadband')">Trouble Shooting Broadband</a>
                                     </li>
                                     <li>
-                                        <a target="_blank" href="assets/documents/catv.pdf">Customer Application Form</a>
+                                        <a target="_blank" href="<?php echo base_url();?>assets/documents/Caf_Form04092018.pdf">Customer Application Form</a>
                                     </li>
                                 </ul>
                             </h4>

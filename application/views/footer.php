@@ -29,47 +29,42 @@
 						</ul>
 					</div>
 					<div class="col-md-2">
-						<h5>Market</h5>
+						<h5>Digital Cable Tv</h5>
 						<ul class="links-vertical">
 							<li>
-								<a href="/television/faqs">
-									Sales FAQ
+								<a href="/support/grievance-redressal">
+								Grievance Redressal
 								</a>
 							</li>
 							<li>
-								<a href="/television/cable-tv">
-									Cable TV
+								<a href="/compliance">
+								Compliance 
 								</a>
 							</li>
 							<li>
-								<a href="/broadband/plans">
-									Broadband
+								<a href="/terms-and-condition">
+								Terms & Conditions
 								</a>
 							</li>
 							<li>
-								<a href="https://hindtvnews.com" target="_blank">
-									Hind TV
+								<a href="/privacy-policy" target="_blank">
+								Privacy Policy
 								</a>
 							</li>
 						</ul>
 					</div>
 
 					<div class="col-md-2">
-						<h5>Social Feed</h5>
+						<h5>Broadband</h5>
 						<ul class="links-vertical">
 							<li>
-								<a href="/terms-and-condition">
-									Terms and Condition
+								<a href="/television/faqs">
+									Basic Troubleshooting
 								</a>
 							</li>
 							<li>
 								<a href="/privacy-policy">
-									Privacy Policy
-								</a>
-							</li>
-							<li>
-								<a href="/compliance">
-									Compliance
+								Appellate Authority
 								</a>
 							</li>
 						</ul>
@@ -83,7 +78,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/customer-application-form?scrollTo=/customer-application-form">
+								<a href="<?php echo base_url();?>customer-application-form">
 									<i class="fa fa-hand-pointer-o fa-2x" style="padding-right:5px;"></i>
 									Submit Online
 								</a>
@@ -91,44 +86,22 @@
 						</ul>
 					</div>
 					<div class="col-md-3">
-						<!-- <h5>Follow Us</h5>
-						<ul class="social-buttons">
-							<li>
-								<a href="pablo" class="btn btn-just-icon btn-simple btn-twitter">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/pages/Dl-Gtpl-Calbnet/199803496734410" class="btn btn-just-icon btn-simple btn-facebook">
-									<i class="fa fa-facebook-square"></i>
-								</a>
-							</li>
-							<li>
-								<a href="pablo" class="btn btn-just-icon btn-simple btn-dribbble">
-									<i class="fa fa-dribbble"></i>
-								</a>
-							</li>
-							<li>
-								<a href="pablo" class="btn btn-just-icon btn-simple btn-google">
-									<i class="fa fa-google-plus"></i>
-								</a>
-							</li>
-							 <li>
-								<a href="pablo" class="btn btn-just-icon btn-simple btn-instagram">
-									<i class="fa fa-instagram"></i>
-								</a>
-							</li>
-						</ul> -->
-
-						<h5>Customer Care</h5>
+						<h5>Contact Us</h5>
 						<h4 class="text-muted">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 							<small style="padding: 0px 10px;">0261 613 5000</small>
 						</h4>
-						<!-- <h4>
-							<i class="fa fa-mobile" aria-hidden="true"></i>
-							<small style="padding: 0px 10px;">+91 90999 37010</small>
-						</h4> -->
+						<h4>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<small style="padding: 0px 10px;">info@gtpl.com</small>
+						</h4>
+						<h4>
+							<i class="fa fa-building-o" aria-hidden="true"></i>
+							<small style="padding: 0px 10px;">417-431, "DL HOUSE", Intercity Complex,
+								Puna-Kumbhariya Road, Nr. PKS Petrol Pump, 
+								Parvat Patia, 
+								Surat, Gujarat 395002</small>
+						</h4>
 					</div>
 				</div>
 			</div>

@@ -77,7 +77,7 @@ app.controller('newConnectionController', function ($scope, $rootScope, $http) {
     var vm = this;
     vm.inquiryFormSubmit = inquiryFormSubmit;
     vm.inquiryForm = {
-        type:"broadband"
+        type: "broadband"
     }
     ///////
 
@@ -567,7 +567,7 @@ app.controller('PackagesController', function ($scope, $http) {
                 }
             });
         }
-       
+
         if (channels.length === 0 || !vm.orderDetail.packName) {
             alert('Please select channels or pack first.');
             return;
@@ -647,8 +647,45 @@ app.controller('DLGTPLChannelsController', function ($scope, $rootScope) {
     ];
     console.log(vm.channels);
 });
-app.controller('CustomerApplicationFormController', function () {
+app.directive('validFile', [function () {
+    return {
+        require: 'ngModel',
+        scope: { format: '@', upload: '&upload' },
+        link: function (scope, el, attrs, ngModel) {
+            // change event is fired when file is selected
+            el.bind('change', function (event) {
+                console.log(event.target.files[0]);
+                scope.upload({ file: event.target.files[0] });
+                scope.$apply(function () {
+                    ngModel.$setViewValue(el.val());
+                    ngModel.$render();
+                });
+            })
+        }
+    }
+}]);
+app.controller('CustomerApplicationFormController', function ($rootScope, $http) {
     $rootScope.bodyClass = 'compliance';
+    var vm = this;
+    //methods
+    vm.submitCustomerApplicationForm = submitCustomerApplicationForm;
+    vm.uploadFile = uploadFile;
+    var fd = new FormData();
+    ///////////
+
+    function uploadFile(e) {
+        fd.append('file', e);
+    }
+    function submitCustomerApplicationForm() {
+        fd.append('caf', JSON.stringify(vm.caf));
+        $http.post(base_url + 'home/cafSubmit', fd, {
+            transformRequest: angular.identity,
+            headers: { 'Content-Type': undefined }
+        }).then(function (res) {
+            alert("Customer application form submitted successfully.")
+            fd = new FormData();;
+        });
+    }
 });
 app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
     $rootScope.bodyClass = 'broadband';
@@ -818,9 +855,9 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
 
         }, 100)
     }
-    vm.getPlan = function(plan){
+    vm.getPlan = function (plan) {
         $rootScope.plan = plan;
-        $rootScope.openModal('new-connection-dialog'); 
+        $rootScope.openModal('new-connection-dialog');
     }
     function _jQueryForSlider() {
         $('.leftLst, .rightLst').click(function () {
@@ -996,11 +1033,15 @@ app.controller('FAQController', function ($scope, $rootScope) {
         },
         {
             que: 'HOW MUCH DIGITAL CABLE TV COST?',
-            ans: 'Monthly service charges vary depending on the type of package you order from us. Go to the Packages section for details about the many options. Additional services may also be optionally available at an additional cost.</br></br>Do I need to buy or Rent new Equipment to receive Digital Cable ? Answer -  For all other areas different STBs are available @ very low and affordable rates from DL GTPL Office / LCO. Under the 3 year rental scheme, the ownership of the STB will be transferred upon payment of the last monthly rental payment.</br></br> I Have Misplaced/Lost the Viewing Card ? What Should I Do ? - Get in touch with your local DL GTPL office/Local cable operator and they will swap or replace the same. Charges of Rs.250/- (including tax) will be levied for the same.'
+            ans: 'Monthly service charges vary depending on the type of package you order from us. Go to the Packages section for details about the many options. Additional services may also be optionally available at an additional cost.'
         },
         {
             que: 'DO I NEED TO BUY OR RENT NEW EQUIPMENT TO RECEIVE DIGITAL CABLE?',
             ans: 'You can rent a STB as per the standard terms laid down by TRAI in mandated areas and CAS. For all other areas different STBs are available @ very low and affordable rates from DL GTPL Office / LCO.'
+        },
+        {
+            que: 'I HAVE MISPLACED/LOST THE VIEWING CARD ? WHAT SHOULD I DO?',
+            ans: 'Get in touch with your local DL GTPL office/Local cable operator and they will swap or replace the same. Charges of Rs.250/- (including tax) will be levied for the same.'
         },
         {
             que: 'IF I HAVE ADDITIONAL TV.S WILL I NEED STB.S AT ALL LOCATIONS?',
