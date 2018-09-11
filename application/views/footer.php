@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="row">
-					<div class="col-md-2">
+					<!-- <div class="col-md-2">
 						<h5>About Us</h5>
 						<ul class="links-vertical">
 
@@ -27,8 +27,8 @@
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div class="col-md-2">
+					</div> -->
+					<div class="col-md-3">
 						<h5>Digital Cable Tv</h5>
 						<ul class="links-vertical">
 							<li>
@@ -54,7 +54,7 @@
 						</ul>
 					</div>
 
-					<div class="col-md-2">
+					<div class="col-md-3">
 						<h5>Broadband</h5>
 						<ul class="links-vertical">
 							<li>
@@ -133,6 +133,7 @@
     <?php
 include_once 'modals/new-connection-modal.html';
 include_once 'modals/upgrade-hd-modal.html';
+include_once 'modals/sign-in-modal.html';
 ?>
 
 

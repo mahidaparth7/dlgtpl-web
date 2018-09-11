@@ -3,8 +3,8 @@
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" ></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
@@ -15,6 +15,23 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+        <div class="item active">
+                <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/broadband.jpg');">
+                    <div class="container" style="    padding-top: 22vh;">
+                            <div class="row">
+                            <div class="col-md-6 text-left   bounceInLeft">
+                                <h1 class="title primary-color">Rediscover the world of Internet</h1>
+                                <h4 class="color-white">
+                                    <strong style="font-size:1.2em;">100 MBPS </strong>plans at amazing price</h4>
+                                    <a href="<?php echo base_url() ?>broadband/plans" class="btn btn-primary btn-lg">
+                                    <strong>Get Now</strong>
+                                    <div class="ripple-container"></div>
+                                </a>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
             <div class="item">
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/home-banner-3.jpg');">
                     <div class="container">
@@ -25,10 +42,10 @@
                                 <br>
 
                                 <div class="buttons">
-                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
+                                    <!-- <a href="#pablo" class="btn btn-white btn-simple btn-lg">
                                         <i class="material-icons">share</i> Share Offer
-                                    </a>
-                                    <a href="#pablo" class="btn btn-danger btn-lg">
+                                    </a> -->
+                                    <a href="<?php echo base_url();?>television/packages" class="btn btn-danger btn-lg">
                                         <i class="material-icons">shopping_cart</i> Shop Now
                                     </a>
                                 </div>
@@ -38,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item active ">
+            <div class="item  ">
                 <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/movies-list.jpg');">
                     <div class="container">
                         <div class="row">
@@ -118,23 +135,7 @@
                 <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/hd-stb.jpg');">
                 </div>
             </div>
-            <div class="item">
-                <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/broadband.jpg');">
-                    <div class="container" style="    padding-top: 22vh;">
-                            <div class="row">
-                            <div class="col-md-6 text-left   bounceInLeft">
-                                <h1 class="title primary-color">Rediscover the world of Internet</h1>
-                                <h4 class="color-white">
-                                    <strong style="font-size:1.2em;">100 MBPS </strong>plans at amazing price</h4>
-                                    <a href="<?php echo base_url() ?>broadband/plans" class="btn btn-primary btn-lg">
-                                    <strong>Get Now</strong>
-                                    <div class="ripple-container"></div>
-                                </a>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>

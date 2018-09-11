@@ -57,8 +57,14 @@
 									{{child.name}}
 								</a>
 							</li>
+							
 						</ul>
 					</li>
+					<li class="cursor-pointer">
+								<a ng-click="openModal('sign-in-dialog')" >
+									Sign In
+								</a>
+							</li>
 				</ul>
 			</div>
 		</div>

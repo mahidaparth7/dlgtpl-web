@@ -59,11 +59,11 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
         },
         // { 'name': 'Careers', 'href': base_url + 'careers' },
         { 'name': 'Contact Us', 'href': base_url + 'contact-us' },
-        { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net', icon: 'fa fa-internet-explorer' }
+        // { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net', icon: 'fa fa-internet-explorer' }
     ]
     $rootScope.openModal = openModal;
     $rootScope.closeModal = closeModal;
-
+  
 
     function openModal(id) {
         $('#' + id).modal('show');
@@ -1019,6 +1019,37 @@ app.controller('ContactUsController', function ($scope, $rootScope, $http) {
         materialKitDemo.initContactUsMap();
     });
 });
+app.controller('ContactUsController', function ($scope, $rootScope, $http) {
+    $rootScope.bodyClass = 'contact-us';
+    var vm = this;
+
+    //methods
+    vm.contactUsForm = contactUsForm;
+
+    ////
+
+    function contactUsForm() {
+        $http({
+            method: 'POST',
+            url: base_url + 'send/mail',
+            data: vm.user
+        }).then(function (res) {
+            console.log(res);
+            vm.user = {};
+        });
+    }
+    $().ready(function () {
+        // the body of this function is in assets/material-kit.min.js
+        materialKitDemo.initContactUsMap();
+    });
+});
+app.controller('signInDialogController', function ($scope, $rootScope, $http) {
+    var vm = this;
+
+    //methods
+    ////
+
+});
 app.controller('FAQController', function ($scope, $rootScope) {
     $rootScope.bodyClass = 'about-us';
     var vm = this;
@@ -1039,17 +1070,14 @@ app.controller('FAQController', function ($scope, $rootScope) {
             que: 'DO I NEED TO BUY OR RENT NEW EQUIPMENT TO RECEIVE DIGITAL CABLE?',
             ans: 'You can rent a STB as per the standard terms laid down by TRAI in mandated areas and CAS. For all other areas different STBs are available @ very low and affordable rates from DL GTPL Office / LCO.'
         },
-        {
-            que: 'I HAVE MISPLACED/LOST THE VIEWING CARD ? WHAT SHOULD I DO?',
-            ans: 'Get in touch with your local DL GTPL office/Local cable operator and they will swap or replace the same. Charges of Rs.250/- (including tax) will be levied for the same.'
-        },
+      
         {
             que: 'IF I HAVE ADDITIONAL TV.S WILL I NEED STB.S AT ALL LOCATIONS?',
             ans: 'Yes, One STB can be connected to one TV set only.'
         },
         {
             que: 'WHAT IS THE ELECTRONIC PROGRAMMING GUIDE?',
-            ans: 'Electronic Program Guide, or EPG, will soon become one of your favorite features. With the touch of a button, you can find information about any program that\'s on today, tomorrow or even up to a week from now. The EPG features bright, clear graphics, easy-to-use menus and information at your fingertips. You can browse through the guide or other available programs without leaving the channel you\'re on. A Channel Banner displays a program synopsis, running time, channel number and also an option to reserve that programme that will come later. You can browse from the current channel banners to find out what\'s on other channels or at other times while still watching the same program. And, you can tune in to a new channel directly from the channel banner if you see something you\'d rather watch! In addition, the simple on-screen guide clicks on and off at the touch of a button, giving you detailed information, such as plot summaries, actors, about any program you choose - up to 3 days in advance. The guide allows you to search for programs by theme (sports, movies, drama, children\'s, etc.) or title. You can browse at your own speed and never have to wait!'
+            ans: 'Electronic Program Guide, or EPG, will soon become one of your favorite features. With the touch of a button, you can find information about any program that\'s on today, tomorrow or even up to a week from now. The EPG features bright, clear graphics, easy-to-use menus and information at your fingertips.<br/> You can browse through the guide or other available programs without leaving the channel you\'re on. A Channel Banner displays a program synopsis, running time, channel number and also an option to reserve that programme that will come later. You can browse from the current channel banners to find out what\'s on other channels or at other times while still watching the same program. And, you can tune in to a new channel directly from the channel banner if you see something you\'d rather watch!<br/> In addition, the simple on-screen guide clicks on and off at the touch of a button, giving you detailed information, such as plot summaries, actors, about any program you choose - up to 3 days in advance. The guide allows you to search for programs by theme (sports, movies, drama, children\'s, etc.) or title. You can browse at your own speed and never have to wait!'
         },
         {
             que: 'HOW IS DIGITAL CABLE BETTER THAN OTHER SERVICES?',
@@ -1069,7 +1097,7 @@ app.controller('FAQController', function ($scope, $rootScope) {
         },
         {
             que: 'I HAVE MISPLACED/LOST THE VIEWING CARD ? WHAT SHOULD I DO?',
-            ans: 'Get in touch with your local DL GTPL office/Local cable operator and they will swap or replace the same. Charges of Rs.400/- + Service Tax will be levied for the same.'
+            ans: 'Get in touch with your local DL GTPL office/Local cable operator and they will swap or replace the same. Charges of Rs.250/- (including tax) will be levied for the same.'
         },
         {
             que: 'WHAT SHOULD I DO IF IS RELOCATE TO A NEW HOUSE?',
