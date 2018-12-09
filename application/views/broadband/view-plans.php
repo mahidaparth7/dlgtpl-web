@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <button class="btn {{city.active ? 'btn-primary' : 'btn-simple'}} btn-round" ng-click="vm.selectCategory($event, city.value)"
-                    ng-repeat="city in vm.cities">{{city.name}}</button>
+                    ng-repeat="city in vm.cities" title="{{city.tooltip}}">{{city.name}}</button>
             </div>
         </div>
         <div class="row broadband-plans" ng-init="vm.colors = ['#FF8989','#89E0FF','#58AD5C','#F98C0E','#666666','#FF8989','#89E0FF','#58AD5C']">

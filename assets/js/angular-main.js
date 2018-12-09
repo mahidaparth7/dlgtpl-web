@@ -702,139 +702,196 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
             value: 'surat_rural'
         },
         {
-            name: 'Bardoli',
-            value: 'bardoli'
-        },
-        {
             name: 'Madhi',
             value: 'madhi'
         },
         {
-            name: 'Vyara',
-            value: 'vyara'
+            name: 'Upcountry City',
+            value: 'upcountry_city',
+            tooltip:"KADODARA / BARDOLI / VYARA"
+        },
+        {
+            name: 'Upcountry Rural',
+            value: 'upcountry_rural',
+            tooltip:"KADODARA / BARDOLI / VYARA"
         }
     ]
     vm.plans = {
-        'surat_city': [
+        "surat_city": [
             {
-                'category': 'Unlimited Plans',
-                'plans': [
-                    { 'speed': '1 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 2750 },
-                    { 'speed': '2 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 3750 },
-                    { 'speed': '3 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 4750 },
-                    { 'speed': '5 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 6500 },
-                    { 'speed': '7 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 8260 },
-                    { 'speed': '10 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 9270 },
-                    { 'speed': '13 Mbps', 'validity': '8 Months Free + 12 Months', 'price': 10296 }
+                "category": "Unlimited Plans",
+                "plans": [
+                    { "speed": "10 Mbps", "validity": "10 Month + 2 Month Free", "price": 4519 },
+                    { "speed": "12 Mbps", "validity": "10 Month + 2 Month Free", "price": 5050 },
+                    { "speed": "15 Mbps", "validity": "10 Month + 2 Month Free", "price": 5350 },
+                    { "speed": "18 Mbps", "validity": "10 Month + 2 Month Free", "price": 5910 },
+                    { "speed": "20 Mbps", "validity": "10 Month + 2 Month Free", "price": 6199 },
+                    { "speed": "25 Mbps", "validity": "10 Month + 2 Month Free", "price": 6499 },
+                    { "speed": "40 Mbps", "validity": "10 Month + 2 Month Free", "price": 6999 },
+                    { "speed": "50 Mbps", "validity": "10 Month + 2 Month Free", "price": 8000 }
                 ]
             },
             {
-                'category': 'Day/Night Unlimited Plans',
-                'plans': [
-                    { 'speed': '1 Mbps - 3 Mbps', 'validity': '12 Months Free + 12 Months', 'price': 5100 },
-                    { 'speed': '1 Mbps - 4 Mbps', 'validity': '12 Months Free + 12 Months', 'price': 6100 },
-                    { 'speed': '2 Mbps - 6 Mbps', 'validity': '12 Months Free + 12 Months', 'price': 7200 },
+                "category": "Day/Night Unlimited Plans",
+                "plans": [
+                    { "speed": "20 Mbps Day / 30 Mbps Night", "validity": "12 MONTH + 6 MONTH", "price":10400 }
                 ]
             },
             {
-                'category': 'Home Limited Plans',
-                'plans': [
-                    { 'speed': '10 Mbps / DATA 1000 GB', 'validity': '6 Months free + 12 Months', 'price': 4999 },
-                    { 'speed': '15 Mbps / DATA 1100 GB', 'validity': '2100 GB free + 12 Months', 'price': 6900 },
-                ]
-            },
-            {
-                'category': 'FUP Unlimited Plans',
-                'plans': [
-                    { 'speed': '15 Mbps / 512 kbps ul', 'validity': '2 GB Daily CAP + 12 Months', 'price': 4700 },
-                    { 'speed': '15 Mbps / 512 kbps ul', 'validity': '4 GB Daily CAP + 12 Months', 'price': 5700 },
-                    { 'speed': '15 Mbps / 2 Mbps ul', 'validity': '5 GB Daily CAP + 12 Months', 'price': 7700 },
+                "category": "Data Plans",
+                "plans": [
+                    { "speed": "25 Mbps / DATA 4000 GB", "validity": "10 Month + 2 MONTH", "price": 4720 },
+                    { "speed": "25 Mbps / DATA 6000 GB", "validity": "12 MONTH + 6 MONTH", "price": 6000 }
                 ]
             }
         ],
-        'surat_rural': [
+        "surat_rural": [
             {
-                'category': 'Unlimited Plans',
-                'plans': [
-                    { 'speed': '1 Mbps', 'month_variation': [{ 'validity': '12 months', 'price': 6000 }, { 'validity': '6 months', 'price': 2999 }, { 'validity': '3 months', 'price': 'N.A' }] },
-                    { 'speed': '2 Mbps', 'month_variation': [{ 'validity': '12 months', 'price': 6999 }, { 'validity': '6 months', 'price': 3800 }, { 'validity': '3 months', 'price': 2500 }] },
-                    { 'speed': '3 Mbps', 'month_variation': [{ 'validity': '12 months', 'price': 11500 }, { 'validity': '6 months', 'price': 6199 }, { 'validity': '3 months', 'price': 3500 }] },
-                    { 'speed': '5 Mbps', 'month_variation': [{ 'validity': '12 months', 'price': 13999 }, { 'validity': '6 months', 'price': 7500 }, { 'validity': '3 months', 'price': 3999 }] },
+                "category": "Unlimited Plans",
+                "plans": [
+                    { "speed": "2 Mbps", "month_variation": [{ "validity": "12 months", "price": 3000 }] },
+                    { "speed": "3 Mbps", "month_variation": [{ "validity": "12 months", "price": 4000 }] },
+                     { "speed": "5 Mbps", "month_variation": [{ "validity": "12 months", "price": 5000 }] },
+                    { "speed": "7 Mbps", "month_variation": [{ "validity": "12 months", "price": 6500 }] },
+                     { "speed": "9 Mbps", "month_variation": [{ "validity": "12 months", "price": 10000 }] },
+                      { "speed": "12 Mbps", "month_variation": [{ "validity": "12 months", "price": 12000 }] }
                 ]
             },
             {
-                'category': 'Day/Night Unlimited Plans',
-                'plans': [
-                    { 'speed': '600 kbps Day - 2 mbps Night', 'month_variation': [{ 'validity': '12 months', 'price': 4999 }, { 'validity': '6 months', 'price': 2699 }, { 'validity': '3 months', 'price': 'N.A' }] },
-                    { 'speed': '1 mbps Day - 3 mbps Night', 'month_variation': [{ 'validity': '12 months', 'price': 10000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 2500 }] },
-                    { 'speed': '2 mbps Day - 6 mbps Night', 'month_variation': [{ 'validity': '12 months', 'price': 12000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 3500 }] },
-                ]
-            },
-            {
-                'category': 'Home Limited Plans ',
-                'plans': [
-                    { 'speed': '10 Mbps', 'data_limit': '250 GB', 'month_variation': [{ 'validity': '12 months', 'price': 4999 }, { 'validity': '6 months', 'price': 2699 }, { 'validity': '3 months', 'price': 'N.A' }] },
-                    { 'speed': '10 Mbps', 'data_limit': '350 GB', 'month_variation': [{ 'validity': '12 months', 'price': 10000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 2500 }] },
-                    { 'speed': '10 Mbps', 'data_limit': '550 GB', 'month_variation': [{ 'validity': '12 months', 'price': 12000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 3500 }] },
-                    { 'speed': '10 Mbps', 'data_limit': '1100 GB', 'month_variation': [{ 'validity': '12 months', 'price': 12000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 3500 }] },
-                    { 'speed': '10 Mbps (1100 GB Free)', 'data_limit': '1100 GB', 'month_variation': [{ 'validity': '12 months', 'price': 12000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 3500 }] },
-                    { 'speed': '10 Mbps (1100 GB Free + 24 months Free)', 'data_limit': '1100 GB', 'month_variation': [{ 'validity': '12 months', 'price': 12000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 3500 }] },
-                    { 'speed': '6 Mbps (6 Months Free + 600 GB Free)', 'data_limit': '1100 GB', 'month_variation': [{ 'validity': '12 months', 'price': 12000 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 3500 }] },
-                ]
-            },
-            {
-                'category': 'CCTV PLAN',
-                'plans': [
-                    {
-                        'speed': '1 Mbps DL - 3 Mbps UL', 'month_variation': [{ 'validity': '12 months', 'price': 12500 }, { 'validity': '6 months', 'price': 'N.A.' }, { 'validity': '3 months', 'price': 'N.A' }]
-                    }
-                ]
-            },
-            {
-                'category': 'Special OFFER',
-                'plans': [
-                    {
-                        'speed': '10 Mbps / 512 kbps UL', 'plans': [
-                            {
-                                'month_variation': [
-                                    { 'data_limit': '25 GB', 'validity': '12 months', 'price': 'N.A.' }, { 'validity': '6 months', 'price': 3099 },
-                                    { 'data_limit': '35 GB', 'validity': '12 months', 'price': 4999 }, { 'validity': '6 months', 'price': 'N.A.' },
-                                    { 'data_limit': '50 GB', 'validity': '12 months', 'price': 5999 }, { 'validity': '6 months', 'price': 'N.A.' },
-                                    { 'data_limit': '100 GB', 'validity': '12 months', 'price': 7499 }, { 'validity': '6 months', 'price': 'N.A.' }
-                                ]
-                            }
-                        ]
-                    }
+                "category": "Home Limited Plans ",
+                "plans": [
+                    { "speed": "15 Mbps /Data 250 GB", "data_limit": "100 GB Free", "month_variation": [{ "validity": "12 months", "price": 2999 }] },
+                    { "speed": "15 Mbps /Data 600 GB", "data_limit": "150 GB Free", "month_variation": [{ "validity": "12 months", "price": 3600 }] },
+                    { "speed": "15 Mbps /Data 1100 GB", "data_limit": "200 GB Free", "month_variation": [{ "validity": "12 months", "price": 4799 }] },
+                    { "speed": "15 Mbps /Data 1100 GB", "data_limit": "1100 GB Free", "month_variation": [{ "validity": "12 months", "price": 6900 }] },
+                    { "speed": "15 Mbps /Data 1000 GB", "data_limit": "6 Month Free", "month_variation": [{ "validity": "12 months", "price": 4999 }] }
                 ]
             }
         ],
-        'bardoli': [
+        "madhi": [
             {
-                'category': 'Unlimited Plans',
-                'plans': [
-                    { 'speed': '2 Mbps', 'month_variation': [{ 'validity': '12 + 6 Months Free', 'price': 7000 }] },
-                    { 'speed': '3 Mbps', 'month_variation': [{ 'validity': '12 + 8 Months free', 'price': 11500 }, { 'validity': '6 + 1 Month free', 'price': 6200 }] },
-                    { 'speed': '5 Mbps', 'month_variation': [{ 'validity': '12 + 8 Months free', 'price': 14000 }, { 'validity': '6 + 1 Month free', 'price': 7500 }] },
+                "category": "Unlimited Plans",
+                "plans": [
+                    { "speed": "4 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 6700 }] },
+                     { "speed": "6 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 8200 }] },
+                    { "speed": "10 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 11200 }, { "validity": "6 Months", "price": 5475 }] },
+                     { "speed": "20 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 14200 }, { "validity": "6 Months", "price": 7040 }] },
+                      { "speed": "30 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 16500 }, { "validity": "6 Months", "price": 9520 }] },
+                      { "speed": "40 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 20200 }, { "validity": "6 Months", "price": 10500 }] }
                 ]
             },
             {
-                'category': 'Day/Night Unlimited Plans',
-                'plans': [
-                    { 'speed': '1 Mbps Day-3 Mbps Night', 'validity': '18 Months Free + 12 Months', 'price': 10000 },
-                    { 'speed': '2 Mbps Day-6 Mbps Night', 'validity': '18 Months Free + 12 Months', 'price': 12000 },
+                "category": "Day/Night Unlimited Plans",
+                "plans": [
+                    { "speed": "4 Mbps - 8 Mbps", "validity": "12 + 6 Months", "price": 7200 },
+                    { "speed": "6 Mbps - 12 Mbps", "validity": "12 + 6 Months", "price": 10000 },
+                      { "speed": "10 Mbps - 25 Mbps", "validity": "12 + 6  Months", "price": 12500 }
                 ]
             },
             {
-                'category': 'Home Limited Plans',
-                'plans': [
-                    { 'speed': '10 Mbps', 'data_limit': '500 GB', 'validity': '100 GB Free + 12 Months', 'price': 8200 },
-                    { 'speed': '10 Mbps', 'data_limit': '1100 GB', 'validity': '2200 GB Free + 12 Months', 'price': 10000 },
-                    { 'speed': '10 Mbps', 'data_limit': '1100 GB', 'validity': '2200 GB + 24 Months Free + 12 Months', 'price': 15000 },
-                    { 'speed': '6 Mbps', 'data_limit': '1000 GB', 'validity': '1000 GB Free + 12 Months', 'price': 6000 },
+                "category": "FUP Unlimited",
+                "plans": [
+                    { "speed": "50 Mbps", "data_limit": "600 GB", "validity": "12 Months", "price": 5000 },
+                    { "speed": "50 Mbps", "data_limit": "1200 GB", "validity": "12 Months", "price": 7500 },
+                     { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 10000 }
+                ]
+            }
+        ],
+        "upcountry_city": [
+            {
+                "category": "Unlimited Plans",
+                "plans": [
+                    { "speed": "5 Mbps", "month_variation": [{ "validity": "12 + 8 Months", "price": 6000 }] },
+                    
+                    { "speed": "10 Mbps", "month_variation": [{ "validity": "12 + 8 Months", "price": 8000 }]},
+                    { "speed": "15 Mbps", "month_variation": [{ "validity": "12 + 3 Months", "price": 7000 }]},
+                
+                      { "speed": "20 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 5000 },
+                       { "validity": "12 + 3 Months", "price": 8000 }
+                    ] 
+                       
+                     },
+                      { "speed": "25 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 7000 },
+                    { "validity": "12 + 3 Months", "price": 10000 }
+                    ] 
+                       
+                     },
+                      { "speed": "30 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 8000 },
+                    { "validity": "12 + 3 Months", "price": 13000 }
+                    ] 
+                       
+                     },
+                      { "speed": "40 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 9000 },
+                    { "validity": "12 + 3 Months", "price": 15000 }
+                    ] 
+                     }
                 ]
             },
+            {
+                "category": "Day/Night Unlimited Plans",
+                "plans": [
+                    { "speed": "10 Mbps - 20 Mbps", "validity": "12 + 12 Months", "price": 10000 }
+                ]
+            },
+            {
+                "category": "DATA Plans",
+                "plans": [
+                    { "speed": "50 Mbps", "data_limit": "600 GB", "validity": "12 Months", "price": 4000 },
+                    { "speed": "50 Mbps", "data_limit": "1200 GB", "validity": "12 Months", "price": 6500 },
+                     { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 8400 }
+                ]
+            }
+        ],
+        "upcountry_rural": [
+            {
+                "category": "Unlimited Plans",
+                "plans": [
+                    { "speed": "4 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 6700 }] },
+                    
+                    { "speed": "6 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 8200 }]},
+                    { "speed": "10 Mbps", "month_variation": [{ "validity": "6 Months", "price": 5475 }, { "validity": "12 + 3 Months", "price": 11200 }]},
+                
+                      { "speed": "20 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 7040 },
+                       { "validity": "12 + 6 Months", "price": 14200 }
+                    ] 
+                       
+                     },
+                      { "speed": "30 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 9520 },
+                    { "validity": "12 + 6 Months", "price": 16500 }
+                    ] 
+                       
+                     },
+                      { "speed": "40 Mbps", "month_variation": [
+                       { "validity": "6 Months", "price": 10500 },
+                      { "validity": "12 + 6 Months", "price": 20200 }
+                    ] 
+                     }
+                ]
+            },
+            {
+                "category": "Day/Night Unlimited Plans",
+                "plans": [
+                    { "speed": "4 Mbps - 8 Mbps", "validity": "12 + 6 Months", "price": 7200 },
+                     { "speed": "6 Mbps - 12 Mbps", "validity": "12 + 6 Months", "price": 10000 },
+                      { "speed": "10 Mbps - 25 Mbps", "validity": "12 + 6 Months", "price": 12500 }
+                ]
+            },
+            {
+                "category": "DATA Plans",
+                "plans": [
+                    { "speed": "50 Mbps", "data_limit": "600 GB", "validity": "12 Months", "price": 5000 },
+                    { "speed": "50 Mbps", "data_limit": "1200 GB", "validity": "12 Months", "price": 7500 },
+                     { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 10000 }
+                ]
+            }
         ]
-    }
+    };
     vm.plan = vm.plans['surat_city'];
     $timeout(function () {
         ResCarouselSize();
@@ -845,9 +902,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
         angular.forEach(vm.cities, function (single, key) {
             vm.cities[key].active = single.value === category ? true : false;
         });
-        if (category === 'vyara' || category === 'madhi') {
-            category = 'bardoli';
-        }
+       
         vm.plan = vm.plans[category];
         $timeout(function () {
             ResCarouselSize();
