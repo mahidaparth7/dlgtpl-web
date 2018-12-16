@@ -38,7 +38,7 @@
 							</li>
 							<li>
 								<a href="/compliance">
-								Compliance 
+								Compliance
 								</a>
 							</li>
 							<li>
@@ -78,7 +78,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url();?>customer-application-form">
+								<a href="<?php echo base_url(); ?>customer-application-form">
 									<i class="fa fa-hand-pointer-o fa-2x" style="padding-right:5px;"></i>
 									Submit Online
 								</a>
@@ -98,8 +98,8 @@
 						<h4>
 							<i class="fa fa-building-o" aria-hidden="true"></i>
 							<small style="padding: 0px 10px;">417-431, "DL HOUSE", Intercity Complex,
-								Puna-Kumbhariya Road, Nr. PKS Petrol Pump, 
-								Parvat Patia, 
+								Puna-Kumbhariya Road, Nr. PKS Petrol Pump,
+								Parvat Patia,
 								Surat, Gujarat 395002</small>
 						</h4>
 					</div>
@@ -119,7 +119,7 @@
 			<br>
 			<span style="font-size:12px; ">Upgrade HD</span>
 		</a>
-		<a ng-click="openModal()">
+		<a ng-click="openModal('quick-pay-modal')">
 			<i class="fa fa-search "></i>
 			<br>
 			<span style="font-size:12px; ">Payment</span>
@@ -134,6 +134,7 @@
 include_once 'modals/new-connection-modal.html';
 include_once 'modals/upgrade-hd-modal.html';
 include_once 'modals/sign-in-modal.html';
+include_once 'modals/quick-pay-modal.html';
 ?>
 
 

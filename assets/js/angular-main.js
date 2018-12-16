@@ -16,7 +16,7 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
                     'name': 'DL GTPL Channels', 'href': base_url + 'television/dlgtpl-channels'
                 },
                 {
-                    'name': 'Digital Cable Tv Packages', 'href': base_url + 'television/packages'
+                    'name': 'Channels & Packs', 'href': base_url + 'television/packages'
                 },
                 {
                     'name': 'FAQs', 'href': base_url + 'television/faqs'
@@ -54,16 +54,19 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
                 },
                 {
                     'name': 'Grievance Redressal', 'href': base_url + 'support/grievance-redressal'
+                },
+                {
+                    'name': 'Contact Us', 'href': base_url + 'contact-us'
                 }
             ]
         },
         // { 'name': 'Careers', 'href': base_url + 'careers' },
-        { 'name': 'Contact Us', 'href': base_url + 'contact-us' },
+        { 'name': 'Consumer Corner', 'href': base_url + 'consumer-corner' },
         // { 'name': 'Sign In', 'href': 'http://login.dlgtpl.net', icon: 'fa fa-internet-explorer' }
     ]
     $rootScope.openModal = openModal;
     $rootScope.closeModal = closeModal;
-  
+
 
     function openModal(id) {
         $('#' + id).modal('show');
@@ -73,6 +76,20 @@ app.run(function ($rootScope, $location, $anchorScroll, $routeParams) {
     }
 });
 
+app.controller('QuickPayDialogController', function ($scope, $rootScope, $http) {
+    var vm = this;
+    vm.payForCable = payForCable;
+    vm.payForBroaband = payForBroaband;
+    ///////
+
+
+    function payForCable() {
+        alert("paying for cable, smart card no does not exists");
+    }
+    function payForBroaband() {
+        alert("paying for broadband, username does not exists");
+    }
+});
 app.controller('newConnectionController', function ($scope, $rootScope, $http) {
     var vm = this;
     vm.inquiryFormSubmit = inquiryFormSubmit;
@@ -708,12 +725,12 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
         {
             name: 'Upcountry City',
             value: 'upcountry_city',
-            tooltip:"KADODARA / BARDOLI / VYARA"
+            tooltip: "KADODARA / BARDOLI / VYARA"
         },
         {
             name: 'Upcountry Rural',
             value: 'upcountry_rural',
-            tooltip:"KADODARA / BARDOLI / VYARA"
+            tooltip: "KADODARA / BARDOLI / VYARA"
         }
     ]
     vm.plans = {
@@ -734,7 +751,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
             {
                 "category": "Day/Night Unlimited Plans",
                 "plans": [
-                    { "speed": "20 Mbps Day / 30 Mbps Night", "validity": "12 MONTH + 6 MONTH", "price":10400 }
+                    { "speed": "20 Mbps Day / 30 Mbps Night", "validity": "12 MONTH + 6 MONTH", "price": 10400 }
                 ]
             },
             {
@@ -751,10 +768,10 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "plans": [
                     { "speed": "2 Mbps", "month_variation": [{ "validity": "12 months", "price": 3000 }] },
                     { "speed": "3 Mbps", "month_variation": [{ "validity": "12 months", "price": 4000 }] },
-                     { "speed": "5 Mbps", "month_variation": [{ "validity": "12 months", "price": 5000 }] },
+                    { "speed": "5 Mbps", "month_variation": [{ "validity": "12 months", "price": 5000 }] },
                     { "speed": "7 Mbps", "month_variation": [{ "validity": "12 months", "price": 6500 }] },
-                     { "speed": "9 Mbps", "month_variation": [{ "validity": "12 months", "price": 10000 }] },
-                      { "speed": "12 Mbps", "month_variation": [{ "validity": "12 months", "price": 12000 }] }
+                    { "speed": "9 Mbps", "month_variation": [{ "validity": "12 months", "price": 10000 }] },
+                    { "speed": "12 Mbps", "month_variation": [{ "validity": "12 months", "price": 12000 }] }
                 ]
             },
             {
@@ -773,11 +790,11 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "category": "Unlimited Plans",
                 "plans": [
                     { "speed": "4 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 6700 }] },
-                     { "speed": "6 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 8200 }] },
+                    { "speed": "6 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 8200 }] },
                     { "speed": "10 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 11200 }, { "validity": "6 Months", "price": 5475 }] },
-                     { "speed": "20 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 14200 }, { "validity": "6 Months", "price": 7040 }] },
-                      { "speed": "30 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 16500 }, { "validity": "6 Months", "price": 9520 }] },
-                      { "speed": "40 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 20200 }, { "validity": "6 Months", "price": 10500 }] }
+                    { "speed": "20 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 14200 }, { "validity": "6 Months", "price": 7040 }] },
+                    { "speed": "30 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 16500 }, { "validity": "6 Months", "price": 9520 }] },
+                    { "speed": "40 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 20200 }, { "validity": "6 Months", "price": 10500 }] }
                 ]
             },
             {
@@ -785,7 +802,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "plans": [
                     { "speed": "4 Mbps - 8 Mbps", "validity": "12 + 6 Months", "price": 7200 },
                     { "speed": "6 Mbps - 12 Mbps", "validity": "12 + 6 Months", "price": 10000 },
-                      { "speed": "10 Mbps - 25 Mbps", "validity": "12 + 6  Months", "price": 12500 }
+                    { "speed": "10 Mbps - 25 Mbps", "validity": "12 + 6  Months", "price": 12500 }
                 ]
             },
             {
@@ -793,7 +810,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "plans": [
                     { "speed": "50 Mbps", "data_limit": "600 GB", "validity": "12 Months", "price": 5000 },
                     { "speed": "50 Mbps", "data_limit": "1200 GB", "validity": "12 Months", "price": 7500 },
-                     { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 10000 }
+                    { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 10000 }
                 ]
             }
         ],
@@ -802,33 +819,37 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "category": "Unlimited Plans",
                 "plans": [
                     { "speed": "5 Mbps", "month_variation": [{ "validity": "12 + 8 Months", "price": 6000 }] },
-                    
-                    { "speed": "10 Mbps", "month_variation": [{ "validity": "12 + 8 Months", "price": 8000 }]},
-                    { "speed": "15 Mbps", "month_variation": [{ "validity": "12 + 3 Months", "price": 7000 }]},
-                
-                      { "speed": "20 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 5000 },
-                       { "validity": "12 + 3 Months", "price": 8000 }
-                    ] 
-                       
-                     },
-                      { "speed": "25 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 7000 },
-                    { "validity": "12 + 3 Months", "price": 10000 }
-                    ] 
-                       
-                     },
-                      { "speed": "30 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 8000 },
-                    { "validity": "12 + 3 Months", "price": 13000 }
-                    ] 
-                       
-                     },
-                      { "speed": "40 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 9000 },
-                    { "validity": "12 + 3 Months", "price": 15000 }
-                    ] 
-                     }
+
+                    { "speed": "10 Mbps", "month_variation": [{ "validity": "12 + 8 Months", "price": 8000 }] },
+                    { "speed": "15 Mbps", "month_variation": [{ "validity": "12 + 3 Months", "price": 7000 }] },
+
+                    {
+                        "speed": "20 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 5000 },
+                            { "validity": "12 + 3 Months", "price": 8000 }
+                        ]
+
+                    },
+                    {
+                        "speed": "25 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 7000 },
+                            { "validity": "12 + 3 Months", "price": 10000 }
+                        ]
+
+                    },
+                    {
+                        "speed": "30 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 8000 },
+                            { "validity": "12 + 3 Months", "price": 13000 }
+                        ]
+
+                    },
+                    {
+                        "speed": "40 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 9000 },
+                            { "validity": "12 + 3 Months", "price": 15000 }
+                        ]
+                    }
                 ]
             },
             {
@@ -842,7 +863,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "plans": [
                     { "speed": "50 Mbps", "data_limit": "600 GB", "validity": "12 Months", "price": 4000 },
                     { "speed": "50 Mbps", "data_limit": "1200 GB", "validity": "12 Months", "price": 6500 },
-                     { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 8400 }
+                    { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 8400 }
                 ]
             }
         ],
@@ -851,35 +872,38 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "category": "Unlimited Plans",
                 "plans": [
                     { "speed": "4 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 6700 }] },
-                    
-                    { "speed": "6 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 8200 }]},
-                    { "speed": "10 Mbps", "month_variation": [{ "validity": "6 Months", "price": 5475 }, { "validity": "12 + 3 Months", "price": 11200 }]},
-                
-                      { "speed": "20 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 7040 },
-                       { "validity": "12 + 6 Months", "price": 14200 }
-                    ] 
-                       
-                     },
-                      { "speed": "30 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 9520 },
-                    { "validity": "12 + 6 Months", "price": 16500 }
-                    ] 
-                       
-                     },
-                      { "speed": "40 Mbps", "month_variation": [
-                       { "validity": "6 Months", "price": 10500 },
-                      { "validity": "12 + 6 Months", "price": 20200 }
-                    ] 
-                     }
+
+                    { "speed": "6 Mbps", "month_variation": [{ "validity": "12 + 6 Months", "price": 8200 }] },
+                    { "speed": "10 Mbps", "month_variation": [{ "validity": "6 Months", "price": 5475 }, { "validity": "12 + 3 Months", "price": 11200 }] },
+
+                    {
+                        "speed": "20 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 7040 },
+                            { "validity": "12 + 6 Months", "price": 14200 }
+                        ]
+
+                    },
+                    {
+                        "speed": "30 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 9520 },
+                            { "validity": "12 + 6 Months", "price": 16500 }
+                        ]
+
+                    },
+                    {
+                        "speed": "40 Mbps", "month_variation": [
+                            { "validity": "6 Months", "price": 10500 },
+                            { "validity": "12 + 6 Months", "price": 20200 }
+                        ]
+                    }
                 ]
             },
             {
                 "category": "Day/Night Unlimited Plans",
                 "plans": [
                     { "speed": "4 Mbps - 8 Mbps", "validity": "12 + 6 Months", "price": 7200 },
-                     { "speed": "6 Mbps - 12 Mbps", "validity": "12 + 6 Months", "price": 10000 },
-                      { "speed": "10 Mbps - 25 Mbps", "validity": "12 + 6 Months", "price": 12500 }
+                    { "speed": "6 Mbps - 12 Mbps", "validity": "12 + 6 Months", "price": 10000 },
+                    { "speed": "10 Mbps - 25 Mbps", "validity": "12 + 6 Months", "price": 12500 }
                 ]
             },
             {
@@ -887,7 +911,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
                 "plans": [
                     { "speed": "50 Mbps", "data_limit": "600 GB", "validity": "12 Months", "price": 5000 },
                     { "speed": "50 Mbps", "data_limit": "1200 GB", "validity": "12 Months", "price": 7500 },
-                     { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 10000 }
+                    { "speed": "50 Mbps", "data_limit": "2000 GB", "validity": "12 Months", "price": 10000 }
                 ]
             }
         ]
@@ -902,7 +926,7 @@ app.controller('BroadbandController', function ($scope, $timeout, $rootScope) {
         angular.forEach(vm.cities, function (single, key) {
             vm.cities[key].active = single.value === category ? true : false;
         });
-       
+
         vm.plan = vm.plans[category];
         $timeout(function () {
             ResCarouselSize();
@@ -1125,7 +1149,7 @@ app.controller('FAQController', function ($scope, $rootScope) {
             que: 'DO I NEED TO BUY OR RENT NEW EQUIPMENT TO RECEIVE DIGITAL CABLE?',
             ans: 'You can rent a STB as per the standard terms laid down by TRAI in mandated areas and CAS. For all other areas different STBs are available @ very low and affordable rates from DL GTPL Office / LCO.'
         },
-      
+
         {
             que: 'IF I HAVE ADDITIONAL TV.S WILL I NEED STB.S AT ALL LOCATIONS?',
             ans: 'Yes, One STB can be connected to one TV set only.'

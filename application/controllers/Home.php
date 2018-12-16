@@ -95,6 +95,10 @@ class Home extends CI_Controller
     {
         $this->load->template('customer-application-form');
     }
+    public function consumerCorner()
+    {
+        $this->load->template('consumer-corner');
+    }
     public function cafSubmit()
     {
         $target_dir = "../../assets/upload/";

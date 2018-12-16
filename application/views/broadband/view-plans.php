@@ -116,23 +116,15 @@
                 </div>
                 <div class="card-footer ">
                     <ul>
-                        <li class="text-muted">Service tax inclusive in all above plans.</li>
-                        <li class="text-muted">Cheque drawn should be in advance in favour of "DL GTPL BROADBAND PVT LTD".</li>
-                        <li class="text-muted">Documents required: (1) One Passport Size Photo, (2) ID Proof, (3) Address Proof</li>
-                        <li class="text-muted">Installation charges extra as applicable. • Speed indicated here by is only up to our ISP Node.</li>
-                        <li class="text-muted">All packages are Pre-paid and no refund will be given in any case.</li>
-                        <li class="text-muted">Under normal circumstances, expected time for NEW Installation will be 3 working days.</li>
-                        <li class="text-muted">Any balance GB will not be carry forward in Data Transfer Plans at the time of renewal.</li>
-                        <li class="text-muted">Renewal activation time will be 0(Zero) hours after submission of payments in accounts.</li>
-                        <li class="text-muted">Maximum contention ratio for corporate fiber segment - 1:1.</li>
-                        <li class="text-muted">Upload speed will be 50% of applicable download speed or 256 kbps, whichever is lower.</li>
-                        <li class="text-muted">Maximum contention ratio for home user - 1:50. </li>
-                        <li class="text-muted">Wireless connection installation charge (Non Refundable) is Rs. 2000/- extra on sharing basis in
-                            above rates.</li>
-                        <li class="text-muted">Shifting charges for wired connection forintercity is Rs. 1000/- Subject to technical feasibilty
-                            at proposed new location.</li>
-                        <li class="text-muted">Static IP Cost Rs. 1500/- (Tax Extra) per year extra if required. In this case you need to submit
-                            new document set as above. </li>
+                        <li class="text-muted">* Inclusive of Tax</li>
+                        <li class="text-muted">* Prices & offers are subject to change without prior notice</li>
+                        <li class="text-muted">* Installation / Registration charges as applicable</li>
+                        <li class="text-muted">* Speed indicated is on a best efforts basis TRAI regulation upto ISP node</li>
+                        <li class="text-muted">* All packages are prepaid & no plan change & no refund will be given in any case.</li>
+                        <li class="text-muted text-danger">Protect your kids from web sites containing inappropriate, mature content.			
+Get Awareness of How your child uses their internet. Use Parental Control Filter.			
+</li>
+                       
                     </ul>
                 </div>
             </div>

@@ -16,17 +16,11 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
         <div class="item active">
-                <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/broadband.jpg');">
+                <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/SFT007_BelfastTel_19.01_LR+AW.jpg');">
                     <div class="container" style="    padding-top: 22vh;">
                             <div class="row">
                             <div class="col-md-6 text-left   bounceInLeft">
-                                <h1 class="title primary-color">Rediscover the world of Internet</h1>
-                                <h4 class="color-white">
-                                    <strong style="font-size:1.2em;">100 MBPS </strong>plans at amazing price</h4>
-                                    <a href="<?php echo base_url() ?>broadband/plans" class="btn btn-primary btn-lg">
-                                    <strong>Get Now</strong>
-                                    <div class="ripple-container"></div>
-                                </a>
+
                             </div>
                             </div>
                     </div>
@@ -38,17 +32,15 @@
                         <div class="row">
                             <div class="col-md-7 col-md-offset-5 text-right  bounceInLeft">
                                 <h1 class="title">We have packages that suits your need</h1>
-                                <h4>Packages Starts with 120 ₹, every family needs a </h4>
+                                <!-- <h4>Packages Starts with 120 ₹, every family needs a </h4> -->
                                 <br>
 
-                                <div class="buttons">
-                                    <!-- <a href="#pablo" class="btn btn-white btn-simple btn-lg">
-                                        <i class="material-icons">share</i> Share Offer
-                                    </a> -->
-                                    <a href="<?php echo base_url();?>television/packages" class="btn btn-danger btn-lg">
+                               <!--  <div class="buttons">
+
+                                    <a href="<?php echo base_url(); ?>television/packages" class="btn btn-danger btn-lg">
                                         <i class="material-icons">shopping_cart</i> Shop Now
                                     </a>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
@@ -91,16 +83,14 @@
                         <div class="row">
                             <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
                                 <h1 class="title">Now Watch Your Favourite Sports in HD</h1>
-                                <h4>Our HD pack Starts With 350 ₹</h4>
+                                <!-- <h4>Our HD pack Starts With 350 ₹</h4> -->
                                 <br>
-                                <div class="buttons">
-                                    <!-- <a href="#pablo" class="btn btn-white btn-simple btn-lg">
-                                        <i class="material-icons">share</i> Share Offer
-                                    </a> -->
+                               <!--  <div class="buttons">
+
                                     <a href="<?php echo base_url(); ?>/television/packages" class="btn btn-danger btn-lg">
                                         <i class="material-icons">shopping_cart</i> Shop Now
                                     </a>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
@@ -114,7 +104,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
-                                <h2 class="title">Enjoy 50+ HD channels <br>only for Rs. 120/- <br>per month.</h2>
+                                <h2 class="title">Enjoy 50+ HD channels
                                 <br>
                                 <!-- <div class="buttons">
                                     <a href="#pablo" class="btn btn-white btn-simple btn-lg">
@@ -135,7 +125,7 @@
                 <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/hd-stb.jpg');">
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>
@@ -167,10 +157,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 " data-animation="fadeInRight">
+            <!-- <div class="col-md-6 " data-animation="fadeInRight">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/hd.jpg')">
                     <div class="card-content">
-                        <!-- <h6 class="category text-info">HD</h6> -->
+
                         <h3 class="card-title">HD Service</h3>
                         <p class="card-description">
                             Premiere high definition cable service with Full HD video and sound
@@ -184,7 +174,7 @@
             <div class="col-md-6 " data-animation="fadeInLeft">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/local-channels.jpg')">
                     <div class="card-content">
-                        <!-- <h6 class="category text-info">Local Channels</h6> -->
+
                         <h3 class="card-title">Local Channels</h3>
                         <p class="card-description">
                             24 hour local channel Movies, Music, News, Rail & Air Schedule
@@ -194,7 +184,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-6 " data-animation="fadeInRight">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/broadband.jpg')">
                     <div class="card-content ">
@@ -291,220 +281,5 @@
             </div>
         </div>
 
-    </div>
-</div>
-<div class="projects-3 section-dark" id="projects-3">
-
-    <div class="container">
-        <div class="title">
-            <h3>Now Playing</h3>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card card-blog card-plain">
-                    <div class="card-image">
-                        <a href="#pablo">
-                            <img src="<?php echo base_url(); ?>assets/img/now_playing/fukrey-returns.jpg" alt="">
-
-                        </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog5.jpg&quot;); opacity: 1;"></div>
-                        <div class="ripple-container"></div>
-                    </div>
-
-                    <div class="card-content">
-                        <h6 class="category text-success">Fukrey Returns</h6>
-
-                        <h4 class="card-title">
-                            <a href="#pablo">Bollywood</a>
-                        </h4>
-
-                        <p class="card-description">
-                            Just out of jail, a don is ready to get back at the four friends who conned her.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content content-info">
-                        <h5 class="category-social">
-                            <i class="fa fa-twitter"></i> 5 Star
-                        </h5>
-                        <h4 class="card-title">
-                            <a href="#pablo">"Amazing movie with so much humour and thrill."</a>
-                        </h4>
-                        <div class="footer">
-                            <div class="author">
-                                <a href="#pablo">
-                                    <img src="<?php echo base_url(); ?>assets/img/faces/avatar.jpg" alt="..." class="avatar img-raised">
-                                    <span>Times of India</span>
-                                </a>
-                            </div>
-                            <div class="stats">
-                                <i class="material-icons">favorite</i> 2.4K ·
-                                <i class="material-icons">share</i> 45
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card card-blog card-plain">
-                    <div class="card-image">
-                        <a href="#pablo">
-                            <img class="img" src="<?php echo base_url(); ?>assets/img/now_playing/the_man_from_earth.jpg">
-                        </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog1.jpg&quot;); opacity: 1;"></div>
-                    </div>
-
-                    <div class="card-content">
-                        <h6 class="category text-success">The Man from Earth</h6>
-
-                        <h4 class="card-title">
-                            <a href="#pablo">Hollywood</a>
-                        </h4>
-                        <p class="card-description">
-                            An impromptu goodbye party for Professor John Oldman becomes a mysterious interrogation after the retiring scholar reveals
-                            to his colleagues he has a longer and stranger past than they can imagine.
-                        </p>
-                        <!-- <div class="footer">
-                                <div class="author">
-                                    <a href="#pablo">
-                                        <img src="<?php echo base_url(); ?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
-                                        <span>Mike John</span>
-                                    </a>
-                                </div>
-                                <div class="stats">
-                                    <i class="material-icons">schedule</i> 5 min read
-                                </div>
-                            </div> -->
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="card card-blog card-plain">
-                    <div class="card-image">
-                        <a href="#pablo">
-                            <img class="img" src="<?php echo base_url(); ?>assets/img/now_playing/baahubali.jpg">
-                        </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog6.jpg&quot;); opacity: 1;"></div>
-                    </div>
-
-                    <div class="card-content">
-                        <h6 class="category text-danger">
-                            <i class="material-icons">trending_up</i> Trending
-                        </h6>
-                        <h6 class="category text-success">Baahubali</h6>
-                        <h4 class="card-title">
-                            <a href="#pablo">In ancient India, an adventurous and daring man becomes involved in a decades old feud between
-                                two warring people.</a>
-                        </h4>
-
-                        <!-- <div class="footer">
-                                <div class="author">
-                                    <a href="#pablo">
-                                        <img src="<?php echo base_url(); ?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
-                                        <span>Mike John</span>
-                                    </a>
-                                </div>
-                                <div class="stats">
-                                    <i class="material-icons">schedule</i> 5 min read
-                                </div>
-                            </div> -->
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="card-content content-danger">
-                        <h5 class="category-social">
-                            <i class="fa fa-newspaper-o"></i> The Next Web
-                        </h5>
-                        <h4 class="card-title">
-                            <a href="#pablo">"Baahubali Crosses 500 Cr"</a>
-                        </h4>
-                        <p class="card-description">
-                            Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye
-                            I love Rick Owens’ bed design but the back is...
-                        </p>
-                        <div class="footer text-center">
-                            <a href="#pablo" class="btn btn-white btn-round">Read Article</a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card card-blog card-plain">
-                    <div class="card-image">
-                        <a href="#pablo">
-                            <img src="<?php echo base_url(); ?>assets/img/now_playing/tennis_tournament.jpg" alt="">
-
-                        </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog5.jpg&quot;); opacity: 1;"></div>
-                        <div class="ripple-container"></div>
-                    </div>
-
-                    <div class="card-content">
-                        <h6 class="category text-success">Tennis Tournament</h6>
-
-                        <h4 class="card-title">
-                            <a href="#pablo">Sports</a>
-                        </h4>
-
-                        <p class="card-description">
-                            Just out of jail, a don is ready to get back at the four friends who conned her.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-
-                <div class="card card-blog card-plain">
-                    <div class="card-image">
-                        <a href="#pablo">
-                            <img class="img" src="<?php echo base_url(); ?>assets/img/now_playing/man-vs-wild.jpg">
-                        </a>
-                        <div class="colored-shadow" style="background-image: url(&quot;<?php echo base_url(); ?>assets/img/examples/blog6.jpg&quot;); opacity: 1;"></div>
-                    </div>
-
-                    <div class="card-content">
-                        <h6 class="category text-danger">
-                            <i class="material-icons">trending_up</i> Trending
-                        </h6>
-                        <h4 class="card-title">Man VS Wild</h4>
-
-                        <p class="card-description">
-                            In ancient India, an adventurous and daring man becomes involved in a decades old feud between two warring people.
-                        </p>
-
-                        <!-- <div class="footer">
-                                <div class="author">
-                                    <a href="#pablo">
-                                        <img src="<?php echo base_url(); ?>assets/img/faces/marc.jpg" alt="..." class="avatar img-raised">
-                                        <span>Mike John</span>
-                                    </a>
-                                </div>
-                                <div class="stats">
-                                    <i class="material-icons">schedule</i> 5 min read
-                                </div>
-                            </div> -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>

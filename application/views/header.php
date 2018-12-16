@@ -24,8 +24,13 @@
 	<!-- <link href="assets-for-demo/demo.css" rel="stylesheet" /> -->
 	<script src="<?php echo base_url(); ?>assets/js/angular.min.js" type="text/javascript"></script>
 	<script src="<?php echo base_url(); ?>assets/js/angular-route.min.js" type="text/javascript"></script>
+	<style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-    ng-cloak {
+        display: none !important;
+    }
+</style>
 </head>
-<body class="{{bodyClass}}" id="{{bodyClass}}">
+<body class="{{bodyClass}}" id="{{bodyClass}}" ng-clock="">
 	<nav class="navbar  navbar-fixed-top" style="height:80px;    ">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -44,10 +49,10 @@
 				<ul class="nav navbar-nav navbar-right" style="padding-top: 10px;">
 					<li class="{{item.children ? 'dropdown' : ''}}" ng-repeat="item in menu">
 						<a ng-if="!item.children" ng-href="{{item.href}}">
-							<i ng-if="item.icon" style="padding-right:5px;" class="{{item.icon}}"></i>{{item.name}}{{item.children}}
+							<i ng-if="item.icon" style="padding-right:5px;" class="{{item.icon}}"></i><strong>{{item.name}}</strong>{{item.children}}
 						</a>
 						<a ng-if="item.children" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-							{{item.name}}
+							<strong>{{item.name}}</strong>
 							<b class="caret"></b>
 							<div class="ripple-container"></div>
 						</a>
@@ -57,12 +62,12 @@
 									{{child.name}}
 								</a>
 							</li>
-							
+
 						</ul>
 					</li>
 					<li class="cursor-pointer">
 								<a ng-click="openModal('sign-in-dialog')" >
-									Sign In
+									<strong>Sign In</strong>
 								</a>
 							</li>
 				</ul>

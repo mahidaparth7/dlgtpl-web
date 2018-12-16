@@ -70,3 +70,4 @@ $route['terms-and-condition'] = 'home/termsAndCondition';
 $route['privacy-policy'] = 'home/privacyPolicy';
 $route['customer-application-form'] = 'home/customerApplicationForm';
 $route['compliance'] = 'home/compliance';
+$route['consumer-corner'] = 'home/consumerCorner';
