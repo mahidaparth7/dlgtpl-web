@@ -8,7 +8,6 @@
             <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
             <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5" class=""></li>
             <!-- <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li> -->
             <!-- <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li> -->
         </ol>
@@ -99,28 +98,7 @@
                 </div>
 
             </div>
-            <div class="item">
-                <div class="page-header header-filter background-size" style="background-image: url('<?php echo base_url(); ?>assets/img/slider-hd-channels.jpeg');background-position: left top;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 col-md-offset-5 text-right   bounceInLeft">
-                                <h2 class="title">Enjoy 50+ HD channels
-                                <br>
-                                <!-- <div class="buttons">
-                                    <a href="#pablo" class="btn btn-white btn-simple btn-lg">
-                                        <i class="material-icons">share</i> Share Offer
-                                    </a>
-                                    <a href="<?php echo base_url() ?>/television/packages" class="btn btn-danger btn-lg">
-                                        <i class="material-icons">shopping_cart</i> Shop Now
-                                    </a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
+          
             <div class="item">
                 <div class="page-header header-filter background-size " style="background-image: url('<?php echo base_url(); ?>assets/img/hd-stb.jpg');">
                 </div>
@@ -147,11 +125,11 @@
 
                     <div class="card-content">
                         <!-- <h6 class="category text-info">Digital</h6> -->
-                        <h3 class="card-title">Digital Cable TV</h3>
+                        <h3 class="card-title">Digital Cable TV Packages</h3>
                         <p class="card-description">
                             Cutting edge digital cable service, High quality picture & stereophonic sound Set Top Box
                         </p>
-                        <a href="<?php echo base_url() ?>/television/cable-tv" class="btn btn-danger btn-round">
+                        <a href="<?php echo base_url() ?>/television/packages" class="btn btn-danger btn-round">
                             <i class="material-icons">content_copy</i> Read More
                         </a>
                     </div>
@@ -188,11 +166,11 @@
             <div class="col-md-6 " data-animation="fadeInRight">
                 <div class="card card-raised card-background" style="background-image: url('<?php echo base_url(); ?>assets/img/services/broadband.jpg')">
                     <div class="card-content ">
-                        <h3 class="card-title">DLGTPL Broadband</h3>
+                        <h3 class="card-title">Broadband Plans</h3>
                         <p class="card-description">
                             Amazing speed with affordable price
                         </p>
-                        <a href="<?php echo base_url(); ?>/broadband/service" class="btn btn-warning btn-round">
+                        <a href="<?php echo base_url(); ?>/broadband/plans" class="btn btn-warning btn-round">
                             <i class="material-icons">subject</i> Read More
                         </a>
                     </div>
